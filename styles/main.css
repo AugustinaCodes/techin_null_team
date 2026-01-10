@@ -12,6 +12,6 @@
   --color-secondary-warning: #ff0000;
 
   /* Fonts */
-  --font-title: DM Serif Display, Arial, Helvetica, sans-serif;
-  --font-text: Public Sans, Arial, Helvetica, sans-serif;
+  --font-title: "DM Serif Display", Arial, Helvetica, sans-serif;
+  --font-text: "Public Sans", Arial, Helvetica, sans-serif;
 }
