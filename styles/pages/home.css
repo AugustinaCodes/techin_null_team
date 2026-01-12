@@ -1,0 +1,70 @@
+header {
+    background-color: grey;
+    /* veliau pekeisti i variables spalvas */
+    padding-top: 40px;
+    padding-inline: 165px;
+    padding-bottom: 75px;
+}
+
+header section div.container_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+    margin-top: 74px;
+}
+
+header div.hero-content {
+    width: 546px;
+    height: 348px;
+    margin-right: 100px;
+}
+
+header div.hero-content h1 {
+    height: 243px;
+    width: 100%;
+    text-align: left;
+    font-size: 72px;
+    margin: 10px;
+}
+
+header div.hero-content form{
+    position: relative;
+}
+
+header div.hero-content form input {
+    width: 445px;
+    height: 48px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 27px;
+}
+
+header div.hero-content form button {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    border: 0;
+    position: absolute;
+    left: 272px;
+}
+
+header p.hero-note {
+    padding-left: 27px;
+}
+
+header div.hero-visual {
+    margin-left: 100px;
+    width: 258px;
+    height: 499px;
+}
+
+header div.hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
