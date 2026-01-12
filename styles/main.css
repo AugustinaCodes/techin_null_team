@@ -1,0 +1,17 @@
+/* Global CSS variables */
+
+:root {
+  /* Colors */
+  --color-primary-pink: #ba4270;
+  --color-primary-white: #fbfcfe;
+
+  --color-secondary-title-text: #36536b;
+  --color-secondary-bg: #1b262f;
+  --color-secondary-active: #da6d97;
+  --color-secondary-text: #6c8294;
+  --color-secondary-warning: #ff0000;
+
+  /* Fonts */
+  --font-title: "DM Serif Display", Arial, Helvetica, sans-serif;
+  --font-text: "Public Sans", Arial, Helvetica, sans-serif;
+}
