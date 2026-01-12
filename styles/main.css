@@ -83,6 +83,66 @@ footer {
   opacity: 1;
 }
 
+.demo_button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 1.5rem;
+ 
+}
+
+.demo_button-h3 {
+  color: var(--color-secondary-title-text);
+  font-family: var(--font-title);
+  font-size: 2rem;
+}
+
+.demo_button_inside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+.demo_button-input {
+  padding-left: 1.6875rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.9375rem;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: 3px 3px 3px 3px #0000002c;
+  font-family: var(--font-text);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.demo_button-button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.9375rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: var(--color-primary-pink);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-family: var(--font-text);
+  color: #ffffff;
+  font-size: 1.0625rem;
+  font-weight: 600;
+   cursor: pointer;
+}
+.demo_button-button:hover{
+    background-color: var(--color-secondary-active);
+}
+
 @media (min-width: 768px) {
   .footer__nav {
     display: flex;
@@ -117,6 +177,57 @@ footer {
 
   .social-link svg:hover {
     fill: var(--color-secondary-active);
+  }
+  .demo_button {
+    margin: 1.5rem;
+  }
+
+  .demo_button_inside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 1.5rem;
+    position: relative;
+  }
+
+  .demo_button-h3 {
+    color: var(--color-secondary-title-text);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    display: inline-block;
+  }
+
+  .demo_button-input {
+    padding-left: 1.6875rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #0000002c;
+    font-family: var(--font-text);
+    font-size: 1.0625rem;
+    font-weight: 600;
+  }
+  .demo_button-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--color-primary-pink);
+    margin-top: 1rem;
+    font-family: var(--font-text);
+    color: #ffffff;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -156,5 +267,65 @@ footer {
 
   .social-link svg:hover {
     fill: var(--color-secondary-active);
+  }
+  .demo_button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10.3125rem;
+    margin-right: 10.3125rem;
+  }
+  .demo_button_inside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .demo_button-h3 {
+    color: var(--color-secondary-title-text);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: left;
+    letter-spacing: -0.023125rem;
+    white-space: nowrap;
+  }
+
+  .demo_button-input {
+    padding-left: 1.6875rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    margin-top: 0;
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #0000002c;
+    font-family: var(--font-text);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    width: 27.8125rem;
+  }
+  .demo_button-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    margin-top: 0;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--color-primary-pink);
+    font-family: var(--font-text);
+    color: #ffffff;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    width: 40%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    white-space: nowrap;
   }
 }
