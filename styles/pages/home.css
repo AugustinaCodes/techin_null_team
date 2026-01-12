@@ -1,5 +1,5 @@
 header {
-    background-color: grey;
+    background-color: var(--color-primary-white);
     /* veliau pekeisti i variables spalvas */
     padding-top: 40px;
     padding-inline: 165px;
@@ -19,15 +19,16 @@ header section div.container_header {
 
 header div.hero-content {
     width: 546px;
-    height: 348px;
     margin-right: 100px;
 }
 
 header div.hero-content h1 {
-    height: 243px;
     width: 100%;
     text-align: left;
+    font-family: var(--font-title);
     font-size: 72px;
+    color: var(--color-secondary-title-text);
+    letter-spacing:  -0.5;
     margin: 10px;
 }
 
@@ -42,6 +43,11 @@ header div.hero-content form input {
     box-sizing: border-box;
     border: 0;
     padding-left: 27px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 header div.hero-content form button {
@@ -51,10 +57,23 @@ header div.hero-content form button {
     border: 0;
     position: absolute;
     left: 272px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--color-primary-pink);
+    color: var(--color-primary-white);
 }
 
 header p.hero-note {
     padding-left: 27px;
+    font-family: var(--font-text);
+    color: var(--color-secondary-text);
+    font-size: 15px;
+}
+
+header p.hero-note a{
+    color: var(--color-secondary-text);
+    font-weight: bold;
 }
 
 header div.hero-visual {
