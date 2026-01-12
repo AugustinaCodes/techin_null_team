@@ -15,3 +15,304 @@
   --font-title: "DM Serif Display", Arial, Helvetica, sans-serif;
   --font-text: "Public Sans", Arial, Helvetica, sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+footer {
+  background-color: var(--color-secondary-bg);
+  color: var(--color-primary-white);
+  font-family: var(--font-text);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  max-height: 353px;
+}
+
+.footer__nav {
+  padding: 2.61rem;
+}
+
+.footer__nav a {
+  text-decoration: none;
+  color: var(--color-primary-white);
+  padding-top: 2rem;
+}
+
+.footer__logo svg {
+  height: 1.79625rem;
+  width: 7.839375rem;
+  opacity: 1;
+}
+
+.footer__nav__pages {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-link svg {
+  fill: var(--color-primary-white);
+}
+
+.social-link svg:hover {
+  fill: var(--color-secondary-active);
+}
+
+.footer__nav__pages-text {
+  opacity: 0.7;
+  font-size: 1rem;
+  letter-spacing: 0px;
+}
+
+.footer__nav__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  opacity: 1;
+  padding-bottom: 3.4375rem;
+}
+
+.footer__nav__pages-text:hover {
+  opacity: 1;
+}
+.demo_button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.demo_button-h3 {
+  color: var(--color-secondary-title-text);
+  font-family: var(--font-title);
+  font-size: 2rem;
+}
+
+.demo_button_inside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.demo_button-input {
+  padding-left: 1.6875rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.9375rem;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: 3px 3px 3px 3px #0000002c;
+  font-family: var(--font-text);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.demo_button-button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.9375rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: var(--color-primary-pink);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-family: var(--font-text);
+  color: #ffffff;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.demo_button-button:hover{
+    background-color: var(--color-secondary-active);
+}
+
+@media (min-width: 768px) {
+  .footer__nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0rem;
+    align-items: center;
+  }
+
+  .footer__nav a {
+    text-decoration: none;
+    color: var(--color-primary-white);
+  }
+
+  .footer__nav__pages {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer__nav__social {
+    padding-bottom: 2rem;
+  }
+  .social-link svg {
+    fill: var(--color-primary-white);
+  }
+
+  .social-link svg:hover {
+    fill: var(--color-secondary-active);
+  }
+
+  .demo_button {
+    margin: 1.5rem;
+  }
+
+  .demo_button_inside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 1.5rem;
+    position: relative;
+  }
+
+  .demo_button-h3 {
+    color: var(--color-secondary-title-text);
+    font-family: var(--font-title);
+    font-size: 2rem;
+    display: inline-block;
+  }
+
+  .demo_button-input {
+    padding-left: 1.6875rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #0000002c;
+    font-family: var(--font-text);
+    font-size: 1.0625rem;
+    font-weight: 600;
+  }
+  .demo_button-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--color-primary-pink);
+    margin-top: 1rem;
+    font-family: var(--font-text);
+    color: #ffffff;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0rem;
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+    align-items: center;
+  }
+
+  .footer__nav a {
+    text-decoration: none;
+    color: var(--color-primary-white);
+  }
+
+  .footer__nav__pages {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer__nav__social {
+    padding-bottom: 2rem;
+  }
+  .social-link svg {
+    fill: var(--color-primary-white);
+  }
+
+  .social-link svg:hover {
+    fill: var(--color-secondary-active);
+  }
+  .demo_button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10.3125rem;
+    margin-right: 10.3125rem;
+  }
+  .demo_button_inside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .demo_button-h3 {
+    color: var(--color-secondary-title-text);
+    font-family: var(--font-title);
+    font-size: 2rem;
+  }
+
+  .demo_button-input {
+    padding-left: 1.6875rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #0000002c;
+    font-family: var(--font-text);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  .demo_button-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--color-primary-pink);
+    font-family: var(--font-text);
+    color: #ffffff;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    width: 60%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    white-space: nowrap;
+  }
+}
+
