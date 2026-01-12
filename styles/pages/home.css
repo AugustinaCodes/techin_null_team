@@ -1,43 +1,33 @@
 header {
     background-color: var(--color-primary-white);
-    /* veliau pekeisti i variables spalvas */
     padding-top: 40px;
-    padding-inline: 165px;
+    padding-inline: 25px;
     padding-bottom: 75px;
 }
 
 header section div.container_header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: stretch;
-    box-sizing: border-box;
-    margin-top: 74px;
-}
-
-header div.hero-content {
-    width: 546px;
-    margin-right: 100px;
+    margin-top: 20px;
 }
 
 header div.hero-content h1 {
-    width: 100%;
+    width: 327px;
     text-align: left;
     font-family: var(--font-title);
-    font-size: 72px;
+    font-size: 32px;
     color: var(--color-secondary-title-text);
-    letter-spacing:  -0.5;
-    margin: 10px;
-}
-
-header div.hero-content form{
-    position: relative;
+    letter-spacing: -0.5;
+    margin-top: 27px;
+    text-align: center;
 }
 
 header div.hero-content form input {
-    width: 445px;
+    width: 327px;
     height: 48px;
     border-radius: 24px;
     box-sizing: border-box;
@@ -48,42 +38,234 @@ header div.hero-content form input {
     font-weight: bold;
     opacity: 50%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-top: 13px;
 }
 
 header div.hero-content form button {
-    width: 173px;
+    width: 327px;
     height: 48px;
     border-radius: 24px;
     border: 0;
-    position: absolute;
     left: 272px;
     font-family: var(--font-text);
     font-size: 15px;
     font-weight: bold;
     background-color: var(--color-primary-pink);
     color: var(--color-primary-white);
+    margin-top: 16px;
 }
 
 header p.hero-note {
-    padding-left: 27px;
     font-family: var(--font-text);
     color: var(--color-secondary-text);
     font-size: 15px;
+    text-align: center;
 }
 
-header p.hero-note a{
+header p.hero-note a {
     color: var(--color-secondary-text);
     font-weight: bold;
 }
 
-header div.hero-visual {
-    margin-left: 100px;
-    width: 258px;
-    height: 499px;
+header div.hero-content {
+    order: 2;
 }
 
 header div.hero-visual img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 240px;
     object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    header {
+        background-color: var(--color-primary-white);
+        padding-top: 45px;
+        padding-inline: 39px;
+        padding-bottom: 75px;
+    }
+
+    header section div.container_header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        margin-top: 50px;
+    }
+
+    header div.hero-content h1 {
+        width: 573px;
+        text-align: center;
+        font-family: var(--font-title);
+        font-size: 48px;
+        color: var(--color-secondary-title-text);
+        letter-spacing: -0.5;
+        margin-top: 55px;
+        text-align: center;
+    }
+
+    header div.hero-content form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    header div.hero-content form input {
+        width: 445px;
+        height: 48px;
+        border-radius: 24px;
+        box-sizing: border-box;
+        border: 0;
+        padding-left: 27px;
+        font-family: var(--font-text);
+        font-size: 15px;
+        font-weight: bold;
+        opacity: 50%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        margin-top: 16px;
+    }
+
+    header div.hero-content form button {
+        width: 173px;
+        height: 48px;
+        border-radius: 24px;
+        border: 0;
+        position: absolute;
+        left: 332px;
+        font-family: var(--font-text);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--color-primary-pink);
+        color: var(--color-primary-white);
+    }
+
+    header p.hero-note {
+        font-family: var(--font-text);
+        color: var(--color-secondary-text);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    header p.hero-note a {
+        color: var(--color-secondary-text);
+        font-weight: bold;
+    }
+
+    header div.hero-content {
+        order: 2;
+    }
+
+    header div.hero-visual img {
+        width: 250px;
+        height: 240px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-color: var(--color-primary-white);
+        padding-top: 40px;
+        padding-inline: 165px;
+        padding-bottom: 75px;
+    }
+
+    header section div.container_header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        box-sizing: border-box;
+        margin-top: 35px;
+    }
+
+    header div.hero-content {
+        order: 0;
+        width: 546px;
+        margin-right: 100px;
+    }
+
+    header div.hero-content h1 {
+        width: 546px;
+        text-align: left;
+        font-family: var(--font-title);
+        font-size: 72px;
+        color: var(--color-secondary-title-text);
+        letter-spacing: -0.5;
+        margin: 10px;
+    }
+
+    header div.hero-content form {
+        position: relative;
+        align-items: flex-start;
+    }
+
+    header div.hero-content form input {
+        width: 445px;
+        height: 48px;
+        border-radius: 24px;
+        box-sizing: border-box;
+        border: 0;
+        padding-left: 27px;
+        font-family: var(--font-text);
+        font-size: 15px;
+        font-weight: bold;
+        opacity: 50%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    header div.hero-content form input:hover
+    {
+        cursor: pointer;
+    }
+
+    header div.hero-content form button {
+        width: 173px;
+        height: 48px;
+        border-radius: 24px;
+        border: 0;
+        position: absolute;
+        left: 277px;
+        font-family: var(--font-text);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--color-primary-pink);
+        color: var(--color-primary-white);
+    }
+
+    header div.hero-content form button:hover{
+        cursor: pointer;
+        background-color: var(--color-secondary-active);
+    }
+
+    header p.hero-note {
+        padding-left: 27px;
+        font-family: var(--font-text);
+        color: var(--color-secondary-text);
+        font-size: 15px;
+        text-align: left;
+    }
+
+    header p.hero-note a {
+        color: var(--color-secondary-text);
+        font-weight: bold;
+    }
+
+    header div.hero-visual {
+        margin-left: 100px;
+    }
+
+    header div.hero-visual img {
+        width: 516px;
+        height: 998px;
+        object-fit: contain;
+    }
 }
