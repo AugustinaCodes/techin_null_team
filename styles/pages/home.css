@@ -8,15 +8,15 @@ header {
 header section div.container-hero-content {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
     align-items: center;
-    align-content: stretch;
     margin-top: 20px;
 }
 
-header div.hero-content h1 {
+header div.hero-content {
     width: 327px;
+}
+
+header div.hero-content h1 {
     text-align: left;
     font-family: var(--font-title);
     font-size: 32px;
@@ -83,10 +83,15 @@ header div.hero-visual img {
         margin-top: 50px;
     }
 
+    header div.hero-content{
+        width: 573px;
+    }
+
     header div.hero-content h1 {
         width: 573px;
         text-align: center;
         font-size: 48px;
+        display: block;
     }
 
     header div.hero-content form {
