@@ -1,3 +1,4 @@
+
 header {
     background-color: var(--color-primary-white);
     padding-top: 40px;
@@ -199,4 +200,306 @@ header div.hero-visual img {
         width: 258px;
         height: 499px;
     }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Who We Work With Section */
+
+.partners {
+  background-color: var(--color-secondary-bg);
+  padding: 80px 24px;
+}
+
+.partners-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.partners-content {
+  text-align: center;
+}
+
+.partners-content h2 {
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  margin: 40px 0 10px;
+}
+
+.partners-content p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 68px;
+  opacity: 70%;
+}
+
+.partners-btn {
+  border: 1px solid var(--color-primary-white);
+  border-radius: 24px;
+  padding: 16px 31.5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.12px;
+}
+
+.partners, .partners-btn {
+  font-family: var(--font-text);
+  color: var(--color-primary-white);
+}
+
+/* Easy to Implement Section */
+
+.feature-inner {
+  text-align: center;
+  padding: 40px 25px;
+  background-color: #EDF3F8;
+}
+
+.feature-visual img {
+  width: 100%;
+}
+
+.feature-content h2 {
+  font-family: var(--font-title);
+  font-size: 36px;
+  letter-spacing: 0.28px;
+  font-weight: 400;
+  color: var(--color-secondary-title-text);
+  margin-bottom: 24px;
+}
+
+.feature-content p {
+  font-family: var(--font-text);
+  color: var(--color-secondary-text);
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+/* Simple UI & UX Section */
+
+.phone--left {
+  width: 20.5rem;
+}
+
+.feature-visual--phones {
+  text-align: center;
+  padding-bottom: 2.7rem;
+}
+
+.feature-visual--phones img {
+  filter: drop-shadow(0 30px 60px rgba(54, 83, 107, 0.308));
+}
+
+.feature--ui {
+  padding: 2.75rem 1.5rem;
+  position: relative;
+  background-color: #edf3f8;
+}
+
+.feature-inner--ui {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.feature-content--ui {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.feature-content--ui p {
+  font-family: var(--font-text);
+  font-size: 0.938rem;
+  color: var(--color-secondary-text);
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+}
+
+.feature-content--ui h2 {
+  font-family: var(--font-title);
+  font-size: 2.25rem;
+  line-height: 3.063rem;
+  font-weight: 400;
+  color: var(--color-secondary-title-text);
+  letter-spacing: -0.018rem;
+  opacity: 1;
+}
+
+.feature-bg--ui {
+  display: none;
+}
+
+/* Tablet Design */
+
+@media (min-width: 768px) {
+  /* Who We Work With Section */
+
+  .partners {
+    padding: 90px 116px;
+  }
+
+  .partners-content p {
+    padding: 0 35px;
+    margin-bottom: 40px;
+  }
+
+  .partners-content h2 {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+  }
+
+  .partners-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Easy to Implement Section */
+
+  .feature-content h2 {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+  }
+
+  .feature-content p {
+    padding: 0 60px;
+  }
+
+  .feature-visual img {
+    width: 500px;
+  }
+
+  /* Simple UI & UX Section */
+
+  .feature--ui {
+    padding: 3.375rem 6.063rem;
+  }
+
+  .feature-visual--phones {
+    padding-bottom: 3.1rem;
+  }
+
+  .feature-content--ui {
+    gap: 0.5rem;
+  }
+
+  .feature-content--ui h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.023rem;
+    height: 4.125rem;
+  }
+
+  .feature-content--ui p {
+    line-height: 1.75rem;
+    height: 3rem;
+  }
+
+  .phone--left {
+    width: 22.62rem;
+  }
+}
+
+/* Desktop Design */
+
+@media (min-width: 1440px) {
+  /* Who We Work With Section */
+
+  .partners {
+    padding: 106px 163px 100px 165px;
+  }
+
+  .partners-inner {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .partners-content {
+    text-align: left;
+  }
+
+  .partners-content p {
+    padding: 0 150px 0 0;
+  }
+
+  .partners-logos {
+    height: 103px;
+  }
+
+  .partners-btn:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #1B262F;
+  }
+
+  /* Easy to Implement Section */
+
+  .feature-inner {
+    display: flex;
+    padding: 40px 25px 0 25px;
+  }
+
+  .feature-content {
+    text-align: left;
+    width: 445px;
+    height: 284px;
+    margin: auto 0;
+  }
+
+  .feature-content p {
+    padding: 0;
+  }
+
+  .feature-visual img {
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+
+  /* Simple UI & UX Section */
+  
+  .feature--ui {
+    padding: 8.813rem 10.313rem;
+  }
+
+  .feature-inner--ui {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feature-content--ui {
+    width: 27.813rem;
+    text-align: left;
+  }
+
+  .feature-content--ui p {
+    text-align: left;
+  }
+
+  .phone--left {
+    width: 35.3rem;
+  }
+
+  .feature-visual--phones {
+    padding-bottom: 0;
+  }
 }
