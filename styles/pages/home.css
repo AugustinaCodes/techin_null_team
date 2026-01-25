@@ -59,6 +59,35 @@
   color: var(--color-primary-white);
 }
 
+/* Easy to Implement Section */
+
+.feature-inner {
+  text-align: center;
+  padding: 40px 25px;
+  background-color: #EDF3F8;
+}
+
+.feature-visual img {
+  width: 100%;
+}
+
+.feature-content h2 {
+  font-family: var(--font-title);
+  font-size: 36px;
+  letter-spacing: 0.28px;
+  font-weight: 400;
+  color: var(--color-secondary-title-text);
+  margin-bottom: 24px;
+}
+
+.feature-content p {
+  font-family: var(--font-text);
+  color: var(--color-secondary-text);
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
 /* Simple UI & UX Section */
 
 .phone--left {
@@ -139,6 +168,21 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* Easy to Implement Section */
+
+  .feature-content h2 {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+  }
+
+  .feature-content p {
+    padding: 0 60px;
+  }
+
+  .feature-visual img {
+    width: 500px;
+  }
+
   /* Simple UI & UX Section */
 
   .feature--ui {
@@ -200,6 +244,30 @@
     cursor: pointer;
     background-color: #FFFFFF;
     color: #1B262F;
+  }
+
+  /* Easy to Implement Section */
+
+  .feature-inner {
+    display: flex;
+    padding: 40px 25px 0 25px;
+  }
+
+  .feature-content {
+    text-align: left;
+    width: 445px;
+    height: 284px;
+    margin: auto 0;
+  }
+
+  .feature-content p {
+    padding: 0;
+  }
+
+  .feature-visual img {
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 60px;
   }
 
   /* Simple UI & UX Section */
