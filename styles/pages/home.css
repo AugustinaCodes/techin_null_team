@@ -3,6 +3,64 @@
   margin: 0;
   padding: 0;
 }
+
+/* Who We Work With Section */
+
+.partners {
+  background-color: var(--color-secondary-bg);
+  padding: 80px 24px;
+}
+
+.partners-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.partners-content {
+  text-align: center;
+}
+
+.partners-content h2 {
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  margin: 40px 0 10px;
+}
+
+.partners-content p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 68px;
+  opacity: 70%;
+}
+
+.partners-btn {
+  border: 1px solid var(--color-primary-white);
+  border-radius: 24px;
+  padding: 16px 31.5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.12px;
+}
+
+.partners, .partners-btn {
+  font-family: var(--font-text);
+  color: var(--color-primary-white);
+}
+
+/* Simple UI & UX Section */
+
 .phone--left {
   width: 20.5rem;
 }
@@ -58,7 +116,31 @@
   display: none;
 }
 
+/* Tablet Design */
+
 @media (min-width: 768px) {
+  /* Who We Work With Section */
+
+  .partners {
+    padding: 90px 116px;
+  }
+
+  .partners-content p {
+    padding: 0 35px;
+    margin-bottom: 40px;
+  }
+
+  .partners-content h2 {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+  }
+
+  .partners-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Simple UI & UX Section */
+
   .feature--ui {
     padding: 3.375rem 6.063rem;
   }
@@ -88,15 +170,50 @@
   }
 }
 
+/* Desktop Design */
+
 @media (min-width: 1440px) {
+  /* Who We Work With Section */
+
+  .partners {
+    padding: 106px 163px 100px 165px;
+  }
+
+  .partners-inner {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .partners-content {
+    text-align: left;
+  }
+
+  .partners-content p {
+    padding: 0 150px 0 0;
+  }
+
+  .partners-logos {
+    height: 103px;
+  }
+
+  .partners-btn:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #1B262F;
+  }
+
+  /* Simple UI & UX Section */
+  
   .feature--ui {
     padding: 8.813rem 10.313rem;
   }
+
   .feature-inner--ui {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
   .feature-content--ui {
     width: 27.813rem;
     text-align: left;
@@ -105,9 +222,11 @@
   .feature-content--ui p {
     text-align: left;
   }
+
   .phone--left {
     width: 35.3rem;
   }
+
   .feature-visual--phones {
     padding-bottom: 0;
   }
