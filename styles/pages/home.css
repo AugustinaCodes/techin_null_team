@@ -381,6 +381,7 @@ header div.hero-visual img {
 
   .cards-inner {
     display: flex;
+    justify-content: center;
   }
 
   .card p {
@@ -542,7 +543,15 @@ header div.hero-visual img {
 
   /* Cards Section */
 
+  .card { 
+    width: 350px;
+  }
+
+  .cards-inner {
+    gap: 30px;
+  }
+
   .card p {
-    padding: 0 45px;
+    padding: 0;
   }
 }
