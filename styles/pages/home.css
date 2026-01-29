@@ -17,10 +17,12 @@ header section div.container-hero-content {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  gap: 27px;
 }
 
 header div.hero-content {
   width: 327px;
+  height: 282px;
 }
 
 header div.hero-content h1 {
@@ -30,7 +32,6 @@ header div.hero-content h1 {
   font-weight: 400;
   color: var(--color-secondary-title-text);
   letter-spacing: -0.5;
-  margin-top: 27px;
   text-align: center;
   height: 116px;
 }
@@ -267,7 +268,7 @@ header div.hero-visual img {
   /* Header Section */
 
   header section div.container-hero-content {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   header div.hero-content {
