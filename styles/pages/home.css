@@ -26,11 +26,13 @@ header div.hero-content {
 header div.hero-content h1 {
   font-family: var(--font-title);
   font-size: 32px;
+  line-height: 36px;
   font-weight: 400;
   color: var(--color-secondary-title-text);
   letter-spacing: -0.5;
   margin-top: 27px;
   text-align: center;
+  height: 116px;
 }
 
 header div.hero-content form input {
@@ -273,6 +275,9 @@ header div.hero-visual img {
     text-align: center;
     font-size: 48px;
     display: block;
+    height: 122px;
+    letter-spacing: -0.37px;
+    line-height: 56px;
   }
 
   header div.hero-content form {
@@ -404,15 +409,17 @@ header div.hero-visual img {
   header div.hero-content {
     order: 0;
     width: 546px;
+    height: 348px;
     margin-right: 100px;
   }
 
   header div.hero-content h1 {
     width: 546px;
+    height: 243px;
     text-align: left;
     font-size: 72px;
-    letter-spacing: -0.5;
-    margin: 10px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
   }
 
   header div.hero-content form {
