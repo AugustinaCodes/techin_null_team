@@ -398,12 +398,18 @@ header div.hero-visual img {
 @media (min-width: 1440px) {
   /* Header Section */
 
+  header{
+    padding-inline: 0;
+  }
+
   header section div.container-hero-content {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     margin-top: 35px;
+    margin-left: 165px;
+    margin-right: 262.9px;
   }
 
   header div.hero-content {
