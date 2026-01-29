@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- paste/insert nav from 1 sprint -->
     <!-- --------------------task VH4-29 ---------------------- -->
     <header>
       <nav class="nav">
@@ -23,24 +22,38 @@
             <img src="assets/shared/desktop/logo.svg" alt="logo" />
           </a>
         </div>
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-        </label>
-        <aside class="sidebar">
-          <nav class="sidebar__link">
-            <a href="/pricing.html">Pricing</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <div class="hamburger__button">Shedule a Demo</div>
-          </nav>
-        </aside>
+        <button
+          class="hamburger-menu"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <img src="assets/shared/mobile/menu.svg" alt="" />
+        </button>
         <div class="nav__menu">
           <a href="/pricing.html">Pricing</a>
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
         </div>
-        <div class="nav__button">Shedule a Demo</div>
+        <div class="nav__button">Schedule a Demo</div>
       </nav>
+      <div class="nav__overlay" hidden></div>
+      <aside class="sidebar" id="mobile-menu" aria-hidden="true">
+        <div class="sidebar__inner">
+          <button class="sidebar__close" type="button" aria-label="Close menu">
+            <img src="assets/shared/mobile/close.svg" alt="" />
+          </button>
+          <nav class="sidebar__link">
+            <a href="/pricing.html">Pricing</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <button class="hamburger__button" type="button">
+              Schedule a Demo
+            </button>
+          </nav>
+        </div>
+      </aside>
     </header>
 
     <!-- --------------------task VH4-29 end---------------------- -->
