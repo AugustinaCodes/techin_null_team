@@ -48,6 +48,8 @@
     text-align: center;
     letter-spacing: 0;
     line-height: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .team-members:first-child {
@@ -77,6 +79,8 @@
     letter-spacing: -0.026875rem;
     line-height: 2rem;
     padding-top: 3.3125rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
 }
 
 @media (min-width: 768px) {
@@ -111,6 +115,8 @@
 
     .team-members__paragraph {
         text-align: left;
+        padding-left: 0;
+        padding-right: 2.5rem;
     }
 
     .section-two__culture {
@@ -170,5 +176,12 @@
         padding-right: 5.9375rem;
         letter-spacing: 0px;
         font-size: 0.9375rem;
+    }
+    .team-members__paragraph{
+      padding-top: 1.0625rem;
+    }
+    .section-two{
+      padding-left: 0;
+      padding-right: 0;
     }
 }
