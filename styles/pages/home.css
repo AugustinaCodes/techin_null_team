@@ -360,11 +360,11 @@ header div.hero-visual img {
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 3.375rem 6.063rem;
+    padding: 4.25rem 6.063rem 3rem  6.063rem;
   }
 
   .feature-visual--phones {
-    padding-bottom: 3.1rem;
+    padding-bottom: 3.375rem;
   }
 
   .feature-content--ui {
@@ -391,6 +391,7 @@ header div.hero-visual img {
 
   .cards-inner {
     display: flex;
+    justify-content: center;
   }
 
   .card p {
@@ -532,7 +533,7 @@ header div.hero-visual img {
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 8.813rem 10.313rem;
+    padding: 6.3rem 10.313rem 5.375rem 10.313rem;
   }
 
   .feature-inner--ui {
@@ -542,11 +543,12 @@ header div.hero-visual img {
   }
 
   .feature-content--ui {
-    width: 27.813rem;
+    width: 445px;
     text-align: left;
   }
 
   .feature-content--ui p {
+     width: 445px;
     text-align: left;
   }
 
@@ -560,7 +562,15 @@ header div.hero-visual img {
 
   /* Cards Section */
 
+  .card { 
+    width: 350px;
+  }
+
+  .cards-inner {
+    gap: 30px;
+  }
+
   .card p {
-    padding: 0 45px;
+    padding: 0;
   }
 }
