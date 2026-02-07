@@ -7,7 +7,7 @@
 /* Header Section */
 
 header {
-  background-color: var(--color-primary-white);
+  background: #EDF3F8 0% 0% no-repeat padding-box;
   padding-inline: 25px;
   padding-bottom: 75px;
 }
@@ -17,20 +17,23 @@ header section div.container-hero-content {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  gap: 27px;
 }
 
 header div.hero-content {
   width: 327px;
+  height: 282px;
 }
 
 header div.hero-content h1 {
   font-family: var(--font-title);
   font-size: 32px;
+  line-height: 36px;
   font-weight: 400;
   color: var(--color-secondary-title-text);
   letter-spacing: -0.5;
-  margin-top: 27px;
   text-align: center;
+  height: 116px;
 }
 
 header div.hero-content form input {
@@ -43,11 +46,15 @@ header div.hero-content form input {
   font-family: var(--font-text);
   font-size: 15px;
   font-weight: bold;
-  opacity: 50%;
+  color: var(--color-secondary-title-text);
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   margin-top: 13px;
+}
+
+header div.hero-content form input::placeholder{
+  opacity: 50%;
 }
 
 header div.hero-content form button {
@@ -73,7 +80,7 @@ header p.hero-note {
 }
 
 header p.hero-note a {
-  color: var(--color-secondary-text);
+  color: #42525C;
   font-weight: bold;
 }
 
@@ -261,7 +268,7 @@ header div.hero-visual img {
   /* Header Section */
 
   header section div.container-hero-content {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   header div.hero-content {
@@ -273,6 +280,9 @@ header div.hero-visual img {
     text-align: center;
     font-size: 48px;
     display: block;
+    height: 122px;
+    letter-spacing: -0.37px;
+    line-height: 56px;
   }
 
   header div.hero-content form {
@@ -302,13 +312,13 @@ header div.hero-visual img {
   }
 
   header div.hero-visual {
-    width: 160px;
-    height: 300px;
+    width: 140px;
+    height: 278px;
   }
 
   header div.hero-visual img {
-    width: 160px;
-    height: 300px;
+    width: 140px;
+    height: 278px;
     box-shadow: 25px 25px 80px #36536b4d;
   }
 
@@ -350,11 +360,11 @@ header div.hero-visual img {
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 3.375rem 6.063rem;
+    padding: 4.25rem 6.063rem 3rem  6.063rem;
   }
 
   .feature-visual--phones {
-    padding-bottom: 3.1rem;
+    padding-bottom: 3.375rem;
   }
 
   .feature-content--ui {
@@ -381,6 +391,7 @@ header div.hero-visual img {
 
   .cards-inner {
     display: flex;
+    justify-content: center;
   }
 
   .card p {
@@ -393,26 +404,34 @@ header div.hero-visual img {
 @media (min-width: 1440px) {
   /* Header Section */
 
+  header{
+    padding-inline: 0;
+  }
+
   header section div.container-hero-content {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     margin-top: 35px;
+    margin-left: 165px;
+    margin-right: 262.9px;
   }
 
   header div.hero-content {
     order: 0;
     width: 546px;
+    height: 348px;
     margin-right: 100px;
   }
 
   header div.hero-content h1 {
     width: 546px;
+    height: 243px;
     text-align: left;
     font-size: 72px;
-    letter-spacing: -0.5;
-    margin: 10px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
   }
 
   header div.hero-content form {
@@ -514,7 +533,7 @@ header div.hero-visual img {
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 8.813rem 10.313rem;
+    padding: 6.3rem 10.313rem 5.375rem 10.313rem;
   }
 
   .feature-inner--ui {
@@ -524,11 +543,12 @@ header div.hero-visual img {
   }
 
   .feature-content--ui {
-    width: 27.813rem;
+    width: 445px;
     text-align: left;
   }
 
   .feature-content--ui p {
+     width: 445px;
     text-align: left;
   }
 
@@ -542,7 +562,15 @@ header div.hero-visual img {
 
   /* Cards Section */
 
+  .card { 
+    width: 350px;
+  }
+
+  .cards-inner {
+    gap: 30px;
+  }
+
   .card p {
-    padding: 0 45px;
+    padding: 0;
   }
 }
