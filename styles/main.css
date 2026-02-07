@@ -31,8 +31,13 @@
   padding-top: 2.5475rem;
 }
 
+.nav__logo{
+  width: 133.9px;
+}
+
 .nav__logo img {
-  height: 2.063rem;
+  height: 2.298rem;
+  width: 8.5rem;
 }
 
 .nav__menu,
@@ -71,7 +76,7 @@
   top: 0;
   right: 0;
   height: 100vh;
-  width: min(80vw, 18.625rem);
+  width: min(80vw, 18.9rem);
   background: var(--color-secondary-bg);
   color: var(--color-primary-white);
   z-index: 101;
@@ -86,7 +91,7 @@
 .sidebar__inner {
   position: relative;
   height: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.6rem;
 }
 
 /* Close button */
