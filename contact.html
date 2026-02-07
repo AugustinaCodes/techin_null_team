@@ -53,19 +53,32 @@
             class="bubble bubble--contact"
           />
         </div>
-        <h1>Text</h1>
+        <h1>Submit a help request and we'll get in touch shortly.</h1>
         <div class="contact-inner">
           <form class="contact-form">
-            <input type="text" placeholder="Text" />
-            <input type="email" placeholder="Text" />
-            <input type="text" placeholder="Text" />
-            <input type="text" placeholder="Text" />
-            <textarea placeholder="Text"></textarea>
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" placeholder="Name" />
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" />
+            <label for="companyName" class="sr-only">Company Name</label>
+            <input type="text" id="companyName" placeholder="Company Name" />
+            <label for="title" class="sr-only">Title</label>
+            <input type="text" id="title" placeholder="Title" />
+            <label for="message" class="sr-only">Message</label>
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              cols="30"
+            ></textarea>
             <label class="contact-check">
               <input type="checkbox" />
-              <span>Text</span>
+              <span
+                >Stay up-to-date with company announcements and updates to our
+                API</span
+              >
             </label>
-            <button type="submit">Text</button>
+            <button type="submit">Submit</button>
           </form>
           <!-- --------------------task VH4-43 end---------------------- -->
           <!-- --------------------task VH4-44---------------------- -->
