@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+
+header {
+  background: #EDF3F8 0% 0% no-repeat padding-box;
+  padding-inline: 25px;
+  padding-bottom: 75px;
+}
+
+header section div.container-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 27px;
+}
+
+header div.hero-content {
+  width: 327px;
+  height: 282px;
+}
+
+header div.hero-content h1 {
+  font-family: var(--font-title);
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--color-secondary-title-text);
+  letter-spacing: -0.5;
+  text-align: center;
+  height: 116px;
+}
+
+header div.hero-content form input {
+  width: 327px;
+  height: 48px;
+  border-radius: 24px;
+  box-sizing: border-box;
+  border: 0;
+  padding-left: 27px;
+  font-family: var(--font-text);
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--color-secondary-title-text);
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-top: 13px;
+}
+
+header div.hero-content form input::placeholder{
+  opacity: 50%;
+}
+
+header div.hero-content form button {
+  width: 327px;
+  height: 48px;
+  border-radius: 24px;
+  border: 0;
+  left: 272px;
+  font-family: var(--font-text);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--color-primary-pink);
+  color: var(--color-primary-white);
+  margin-top: 16px;
+}
+
+header p.hero-note {
+  font-family: var(--font-text);
+  color: var(--color-secondary-text);
+  font-size: 15px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+header p.hero-note a {
+  color: #42525C;
+  font-weight: bold;
+}
+
+header div.hero-content {
+  order: 2;
+}
+
+header div.hero-visual img {
+  width: 250px;
+  height: 240px;
+  object-fit: contain;
+}
+
+/* Who We Work With Section */
+
+.partners {
+  background-color: var(--color-secondary-bg);
+  padding: 80px 24px;
+}
+
+.partners-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.partners-content {
+  text-align: center;
+}
+
+.partners-content h2 {
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  margin: 40px 0 10px;
+}
+
+.partners-content p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 68px;
+  opacity: 70%;
+}
+
+.partners-btn {
+  border: 1px solid var(--color-primary-white);
+  border-radius: 24px;
+  padding: 16px 31.5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.12px;
+}
+
+.partners,
+.partners-btn {
+  font-family: var(--font-text);
+  color: var(--color-primary-white);
+}
+
+/* Easy to Implement Section */
+
+.feature-inner {
+  text-align: center;
+  padding: 40px 25px;
+  background-color: #edf3f8;
+}
+
+.feature-visual img {
+  width: 100%;
+}
+
+.feature-content h2 {
+  font-family: var(--font-title);
+  font-size: 36px;
+  letter-spacing: 0.28px;
+  font-weight: 400;
+  color: var(--color-secondary-title-text);
+  margin-bottom: 24px;
+}
+
+.feature-content p {
+  font-family: var(--font-text);
+  color: var(--color-secondary-text);
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+/* Simple UI & UX Section */
+
+.phone--left {
+  width: 20.5rem;
+}
+
+.feature-visual--phones {
+  text-align: center;
+  padding-bottom: 2.7rem;
+}
+
+.feature-visual--phones img {
+  filter: drop-shadow(0 30px 60px rgba(54, 83, 107, 0.308));
+}
+
+.feature--ui {
+  padding: 2.75rem 1.5rem;
+  position: relative;
+  background-color: #edf3f8;
+}
+
+.feature-inner--ui {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.feature-content--ui {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.feature-content--ui p {
+  font-family: var(--font-text);
+  font-size: 0.938rem;
+  color: var(--color-secondary-text);
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+}
+
+.feature-content--ui h2 {
+  font-family: var(--font-title);
+  font-size: 2.25rem;
+  line-height: 3.063rem;
+  font-weight: 400;
+  color: var(--color-secondary-title-text);
+  letter-spacing: -0.018rem;
+  opacity: 1;
+}
+
+.feature-bg--ui {
+  display: none;
+}
+
+/* Cards Section */
+
+.cards-inner {
+  background-color: #EDF3F8;
+  padding: 60px 18px;
+  text-align: center;
+}
+
+.card h3 {
+  font-family: var(--font-text);
+  font-size: 18px;
+  letter-spacing: 0.14px;
+  color: var(--color-secondary-title-text);
+  margin: 35px 0 20px 0;
+}
+
+.card p {
+  font-family: var(--font-text);
+  font-size: 15px;
+  letter-spacing: 0.12px;
+  font-weight: 200;
+  line-height: 25px;
+  margin-bottom: 50px;
+  color: var(--color-secondary-text);
+}
+
+/* Tablet Design */
+
+@media (min-width: 768px) {
+  /* Header Section */
+
+  header section div.container-hero-content {
+    margin-top: 0;
+  }
+
+  header div.hero-content {
+    width: 573px;
+  }
+
+  header div.hero-content h1 {
+    width: 573px;
+    text-align: center;
+    font-size: 48px;
+    display: block;
+    height: 122px;
+    letter-spacing: -0.37px;
+    line-height: 56px;
+  }
+
+  header div.hero-content form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  header div.hero-content form input {
+    width: 445px;
+    margin-top: 16px;
+  }
+
+  header div.hero-content form button {
+    width: 173px;
+    position: absolute;
+    left: 332px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--color-primary-pink);
+    color: var(--color-primary-white);
+  }
+
+  header div.hero-visual {
+    width: 140px;
+    height: 278px;
+  }
+
+  header div.hero-visual img {
+    width: 140px;
+    height: 278px;
+    box-shadow: 25px 25px 80px #36536b4d;
+  }
+
+  /* Who We Work With Section */
+
+  .partners {
+    padding: 90px 116px;
+  }
+
+  .partners-content p {
+    padding: 0 35px;
+    margin-bottom: 40px;
+  }
+
+  .partners-content h2 {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+  }
+
+  .partners-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Easy to Implement Section */
+
+  .feature-content h2 {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+  }
+
+  .feature-content p {
+    padding: 0 60px;
+  }
+
+  .feature-visual img {
+    width: 500px;
+  }
+
+  /* Simple UI & UX Section */
+
+  .feature--ui {
+    padding: 4.25rem 6.063rem 3rem  6.063rem;
+  }
+
+  .feature-visual--phones {
+    padding-bottom: 3.375rem;
+  }
+
+  .feature-content--ui {
+    gap: 0.5rem;
+  }
+
+  .feature-content--ui h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.023rem;
+    height: 4.125rem;
+  }
+
+  .feature-content--ui p {
+    line-height: 1.75rem;
+    height: 3rem;
+  }
+
+  .phone--left {
+    width: 22.62rem;
+  }
+
+  /* Cards Section */
+
+  .cards-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card p {
+    padding: 0 10px;
+  }
+}
+
+/* Desktop Design */
+
+@media (min-width: 1440px) {
+  /* Header Section */
+
+  header{
+    padding-inline: 0;
+  }
+
+  header section div.container-hero-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 35px;
+    margin-left: 165px;
+    margin-right: 262.9px;
+  }
+
+  header div.hero-content {
+    order: 0;
+    width: 546px;
+    height: 348px;
+    margin-right: 100px;
+  }
+
+  header div.hero-content h1 {
+    width: 546px;
+    height: 243px;
+    text-align: left;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+  }
+
+  header div.hero-content form {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  header div.hero-content form input {
+    width: 445px;
+  }
+
+  header div.hero-content form input:hover {
+    cursor: pointer;
+  }
+
+  header div.hero-content form button {
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    border: 0;
+    position: absolute;
+    left: 277px;
+    font-size: 15px;
+  }
+
+  header div.hero-content form button:hover {
+    cursor: pointer;
+    background-color: var(--color-secondary-active);
+  }
+
+  header p.hero-note {
+    padding-left: 27px;
+    text-align: left;
+  }
+
+  header div.hero-visual {
+    width: 258px;
+    height: 499px;
+  }
+
+  header div.hero-visual img {
+    width: 258px;
+    height: 499px;
+  }
+
+  /* Who We Work With Section */
+
+  .partners {
+    padding: 106px 163px 100px 165px;
+  }
+
+  .partners-inner {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .partners-content {
+    text-align: left;
+  }
+
+  .partners-content p {
+    padding: 0 150px 0 0;
+  }
+
+  .partners-logos {
+    height: 103px;
+  }
+
+  .partners-btn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #1b262f;
+  }
+
+  /* Easy to Implement Section */
+
+  .feature-inner {
+    display: flex;
+    padding: 40px 25px 0 25px;
+  }
+
+  .feature-content {
+    text-align: left;
+    width: 445px;
+    height: 284px;
+    margin: auto 0;
+  }
+
+  .feature-content p {
+    padding: 0;
+  }
+
+  .feature-visual img {
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+
+  /* Simple UI & UX Section */
+
+  .feature--ui {
+    padding: 6.3rem 10.313rem 5.375rem 10.313rem;
+  }
+
+  .feature-inner--ui {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feature-content--ui {
+    width: 445px;
+    text-align: left;
+  }
+
+  .feature-content--ui p {
+     width: 445px;
+    text-align: left;
+  }
+
+  .phone--left {
+    width: 35.3rem;
+  }
+
+  .feature-visual--phones {
+    padding-bottom: 0;
+  }
+
+  /* Cards Section */
+
+  .card { 
+    width: 350px;
+  }
+
+  .cards-inner {
+    gap: 30px;
+  }
+
+  .card p {
+    padding: 0;
+  }
+}
