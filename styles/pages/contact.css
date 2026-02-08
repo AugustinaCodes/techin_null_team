@@ -61,13 +61,127 @@
     padding-top: 24px;
 }
 
-/* Tablet Design */
-
-@media (min-width: 768px) {
-
+.hidden-text {
+  display: none;
 }
 
-/* Desktop Design */
+.contact {
+  padding: 0px 24px 0px 25px;
+  background-color: #edf3f8;
+}
+
+.contact-logos {
+  justify-items: center;
+  padding: 42px 0 83px 0;
+}
+
+.contact-logos h2 {
+  color: var(--color-secondary-title-text);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  font-family: var(--font-title);
+  text-align: center;
+  opacity: 0.75;
+  padding-bottom: 24px;
+}
+
+.logos-grid {
+  width: 279px;
+  height: 154px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.logo {
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+}
+.logo img {
+  transform: scale(0.8);
+}
+
+.logos-grid .logo:nth-child(2n + 1) img {
+  transform-origin: left center;
+}
+
+.logos-grid .logo:nth-child(2n) img {
+  transform-origin: center;
+}
+
+.logos-grid .logo:nth-child(4) img {
+  transform-origin: right center;
+}
+
+@media (min-width: 768px) {
+  .logos-grid {
+    width: 541px;
+    height: 104px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  .logos-grid .logo img {
+    transform: none;
+    transform-origin: center;
+  }
+  .logo img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  .contact-logos {
+    padding: 42px 0 106px 0;
+  }
+
+  .contact-logos h2 {
+    width: 445px;
+    padding: 0 10px 32px 10px;
+  }
+
+  .logos-grid .logo:nth-child(3n + 1) {
+    justify-self: start;
+  }
+
+  .logos-grid .logo:nth-child(3n + 2) {
+    justify-self: center;
+  }
+
+  .logos-grid .logo:nth-child(3n) {
+    justify-self: end;
+  }
+}
 
 @media (min-width: 1440px) {
+  .hidden-text {
+    display: inline;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logos-grid {
+    justify-items: center;
+  }
+
+  .contact-inner {
+    display: flex;
+    gap: 124px;
+    padding: 0 165px;
+    justify-content: space-between;
+  }
+  .contact-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .contact-logos h2 {
+    text-align: left;
+    padding: 0 0 32px 0;
+  }
 }
