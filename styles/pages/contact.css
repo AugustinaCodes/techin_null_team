@@ -6,6 +6,10 @@
 
 /* ------------------VH4-44------------------- */
 
+header {
+  padding-inline: 24px;
+}
+
 .hidden-text {
   display: none;
 }

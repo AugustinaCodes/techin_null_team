@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+header {
+  padding-inline: 24px;
+}
+
 .section-two {
   display: flex;
   flex-direction: column;
