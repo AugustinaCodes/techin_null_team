@@ -61,6 +61,10 @@
     padding-top: 24px;
 }
 
+header {
+  padding-inline: 24px;
+}
+
 .hidden-text {
   display: none;
 }

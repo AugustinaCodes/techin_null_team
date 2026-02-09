@@ -12,6 +12,10 @@ main {
   padding-inline: 1.5rem;
 }
 
+header {
+  padding-inline: 24px;
+}
+
 .pricing h1 {
   width: 20.438rem;
   height: 2.75rem;
