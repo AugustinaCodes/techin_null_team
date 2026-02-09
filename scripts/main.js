@@ -34,3 +34,33 @@
     if (e.key === "Escape") closeMenu();
   });
 })();
+
+// Contact form validation
+
+(() => {
+  const form = document.querySelector(".contact-form");
+  const emailInput = document.querySelector("#email");
+  const emailError = document.querySelector(".email-error");
+
+  if (!form || !emailInput || !emailError) return;
+
+  form.addEventListener("submit", (e) => {
+    const emailValue = emailInput.value.trim();
+
+    if (!emailValue) {
+      e.preventDefault();
+      emailInput.classList.add("error");
+      emailError.classList.add("show");
+    } else {
+      emailInput.classList.remove("error");
+      emailError.classList.remove("show");
+    }
+  });
+
+  emailInput.addEventListener("input", () => {
+    if (emailInput.value.trim()) {
+      emailInput.classList.remove("error");
+      emailError.classList.remove("show");
+    }
+  });
+})();
