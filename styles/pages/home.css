@@ -7,8 +7,8 @@
 /* Header Section */
 
 header {
-  background: #EDF3F8 0% 0% no-repeat padding-box;
-  padding-inline: 25px;
+  background-color: var(--color-primary-white);
+  padding-inline: 24px;
   padding-bottom: 75px;
 }
 
