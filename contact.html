@@ -18,7 +18,7 @@
       <nav class="nav">
         <div class="nav__logo">
           <a href="/index.html">
-            <img src="assets/shared/desktop/logo.svg" alt="logo" />
+            <img src="assets/shared/desktop/logo.svg" alt="PayAPI" />
           </a>
         </div>
         <button
@@ -28,14 +28,14 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <img src="assets/shared/mobile/menu.svg" alt="" />
+          <img src="assets/shared/mobile/menu.svg" alt="Hamburger Menu" />
         </button>
         <div class="nav__menu">
           <a href="/pricing.html">Pricing</a>
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
         </div>
-        <div class="nav__button">Schedule a Demo</div>
+        <button class="nav__button" type="button">Schedule a Demo</button>
       </nav>
       <div class="nav__overlay" hidden></div>
       <aside class="sidebar" id="mobile-menu" aria-hidden="true">
@@ -60,26 +60,66 @@
     <main>
       <section class="contact">
         <div class="contact-bg">
+          <!-- Bubble section: to do after -->
           <img
             src="/assets/pic.png"
-            alt="Text"
+            alt=""
+            aria-hidden="true"
             class="bubble bubble--contact"
           />
+          <!-- Bubble section -->
         </div>
         <h1>Submit a help request and we'll get in touch shortly.</h1>
         <div class="contact-inner">
-          <form class="contact-form">
+          <form class="contact-form" novalidate>
+            <div
+              class="sr-only"
+              id="form-error-summary"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></div>
             <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" placeholder="Name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              autocomplete="name"
+            />
             <label for="email" class="sr-only">Email Address</label>
-            <input type="email" id="email" placeholder="Email Address" />
-            <div class="email-error">This field can't be empty</div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              autocomplete="email"
+              aria-required="true"
+              required
+              aria-describedby="email-error"
+            />
+            <div class="email-error" id="email-error" role="alert" aria-live="polite">
+              This field can't be empty
+            </div>
             <label for="companyName" class="sr-only">Company Name</label>
-            <input type="text" id="companyName" placeholder="Company Name" />
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              placeholder="Company Name"
+              autocomplete="organization"
+            />
             <label for="title" class="sr-only">Title</label>
-            <input type="text" id="title" placeholder="Title" />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+              autocomplete="organization-title"
+            />
             <label for="message" class="sr-only">Message</label>
             <textarea
+              id="message"
               name="message"
               placeholder="Message"
               rows="5"
