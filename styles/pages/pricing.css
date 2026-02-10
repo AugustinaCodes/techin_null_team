@@ -35,6 +35,7 @@ header {
   grid-template-columns: 20.438rem;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 3.438rem;
+  margin-bottom: 5.188rem;
 }
 
 .price-card {
@@ -131,13 +132,14 @@ p.price {
   font-size: 0.938rem;
   letter-spacing: -0.007rem;
   margin-top: 1.75rem;
-  margin-bottom: 3.438rem;
 }
 
 .pricing button:hover {
   background-color: var(--color-secondary-title-text);
   color: var(--color-primary-white);
 }
+
+
 
 @media (min-width: 768px) {
   main {
