@@ -43,6 +43,7 @@
 .nav__menu,
 .nav__button {
   display: none;
+  text-decoration: none;
 }
 
 /* Burger */
@@ -198,7 +199,7 @@ body.nav-locked {
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 0.9375rem;
-  margin-top: 1rem;
+  margin-top: 21px;
   border-radius: 1.5rem;
   border: none;
   box-shadow: 3px 3px 3px 3px #0000002c;
@@ -244,8 +245,8 @@ footer {
 }
 
 .footer__nav {
-  padding-top: 2.61rem;
-  padding-bottom: 2.5rem;
+  padding-top: 10px;
+  padding-bottom: 55px;
 }
 
 .footer__nav a {
@@ -305,7 +306,7 @@ footer {
   }
 
   .nav {
-    padding: 2.5rem;
+    padding:  0rem 0rem 3rem 0rem;
   }
 
   .nav__menu {
@@ -333,8 +334,8 @@ footer {
   }
 
   .nav__button {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
     padding-top: 1rem;
     padding-bottom: 0.9375rem;
     border-radius: 1.5rem;
@@ -360,7 +361,7 @@ footer {
   .demo_button {
     padding-left: 10.125rem;
     padding-right: 10.125rem;
-    padding-bottom: 5rem;
+    padding-bottom: 100px;
   }
 
   .demo_button_inside {
@@ -426,8 +427,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0rem;
-    padding: 2.26625rem;
+    padding: 32px 39px;
     align-items: center;
   }
 
@@ -477,7 +477,8 @@ footer {
     justify-content: start;
     gap: 4.02125rem;
     align-items: center;
-    padding-top: 2.5475rem;
+    padding-top: 0;
+    padding-bottom: 38px;
   }
 
   .nav__menu {
@@ -606,8 +607,8 @@ footer {
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
-    padding-bottom: 2.375rem;
-    padding-top: 2.375rem;
+    padding-bottom: 31px;
+    padding-top: 31px;
     padding-left: 10.3125rem;
     padding-right: 10.3125rem;
     align-items: center;

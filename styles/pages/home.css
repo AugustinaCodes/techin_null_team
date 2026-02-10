@@ -9,14 +9,14 @@
 header {
   background-color: var(--color-primary-white);
   padding-inline: 24px;
-  padding-bottom: 75px;
+  padding-bottom: 80px;
 }
 
 header section div.container-hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 32.47px;
   gap: 27px;
 }
 
@@ -57,6 +57,18 @@ header div.hero-content form input::placeholder{
   opacity: 50%;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 header div.hero-content form button {
   width: 327px;
   height: 48px;
@@ -89,7 +101,6 @@ header div.hero-content {
 }
 
 header div.hero-visual img {
-  width: 250px;
   height: 240px;
   object-fit: contain;
 }
@@ -123,14 +134,14 @@ header div.hero-visual img {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 0.25px;
-  margin: 40px 0 10px;
+  margin: 59px 0 5px;
 }
 
 .partners-content p {
   font-size: 15px;
   font-weight: 300;
   line-height: 28px;
-  margin-bottom: 68px;
+  margin-bottom: 84px;
   opacity: 70%;
 }
 
@@ -154,7 +165,7 @@ header div.hero-visual img {
 
 .feature-inner {
   text-align: center;
-  padding: 40px 25px;
+  padding: 80px 23px 44px 24px;
   background-color: #edf3f8;
 }
 
@@ -168,7 +179,9 @@ header div.hero-visual img {
   letter-spacing: 0.28px;
   font-weight: 400;
   color: var(--color-secondary-title-text);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+  margin-top: 43px;
+  line-height: 36px;
 }
 
 .feature-content p {
@@ -177,6 +190,8 @@ header div.hero-visual img {
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
+  letter-spacing: -0.3px;
+  height: 104px;
 }
 
 /* Simple UI & UX Section */
@@ -240,7 +255,7 @@ header div.hero-visual img {
 
 .cards-inner {
   background-color: #EDF3F8;
-  padding: 60px 18px;
+  padding: 44px 23px 35px 23px;
   text-align: center;
 }
 
@@ -249,7 +264,7 @@ header div.hero-visual img {
   font-size: 18px;
   letter-spacing: 0.14px;
   color: var(--color-secondary-title-text);
-  margin: 35px 0 20px 0;
+  margin: 35px 0 18px 0;
 }
 
 .card p {
@@ -258,7 +273,7 @@ header div.hero-visual img {
   letter-spacing: 0.12px;
   font-weight: 200;
   line-height: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   color: var(--color-secondary-text);
 }
 
@@ -266,6 +281,11 @@ header div.hero-visual img {
 
 @media (min-width: 768px) {
   /* Header Section */
+
+  header{
+    padding: 40px;
+    padding-bottom: 100px;
+  }
 
   header section div.container-hero-content {
     margin-top: 0;
@@ -283,6 +303,7 @@ header div.hero-visual img {
     height: 122px;
     letter-spacing: -0.37px;
     line-height: 56px;
+    margin-top: 54px;
   }
 
   header div.hero-content form {
@@ -311,14 +332,18 @@ header div.hero-visual img {
     color: var(--color-primary-white);
   }
 
+  header p.hero-note{
+    margin-top: 16px;
+  }
+
   header div.hero-visual {
     width: 140px;
     height: 278px;
   }
 
   header div.hero-visual img {
-    width: 140px;
-    height: 278px;
+    width: 155px;
+    height: 299px;
     box-shadow: 25px 25px 80px #36536b4d;
   }
 
@@ -347,20 +372,26 @@ header div.hero-visual img {
   .feature-content h2 {
     font-size: 48px;
     letter-spacing: 0.37px;
+    margin-top: 54px;
+    height: 50px;
+  }
+
+  .feature-inner{
+    padding: 100px 97px 40px 97px;
   }
 
   .feature-content p {
-    padding: 0 60px;
+   height: 48px;
   }
 
   .feature-visual img {
-    width: 500px;
+    width: 392px;
   }
 
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 4.25rem 6.063rem 3rem  6.063rem;
+    padding: 4.25rem 6.063rem 4rem  6.063rem;
   }
 
   .feature-visual--phones {
@@ -392,6 +423,7 @@ header div.hero-visual img {
   .cards-inner {
     display: flex;
     justify-content: center;
+    padding-bottom: 58px;
   }
 
   .card p {
@@ -406,6 +438,7 @@ header div.hero-visual img {
 
   header{
     padding-inline: 0;
+    padding-bottom: 75px;
   }
 
   header section div.container-hero-content {
@@ -510,7 +543,7 @@ header div.hero-visual img {
 
   .feature-inner {
     display: flex;
-    padding: 40px 25px 0 25px;
+    padding: 150px 25px 50px 25px;
   }
 
   .feature-content {
@@ -525,15 +558,20 @@ header div.hero-visual img {
   }
 
   .feature-visual img {
-    width: 600px;
-    margin-left: 100px;
-    margin-right: 60px;
+    width: 445px;
+    margin-left: 140px;
+    margin-right: 125px;
   }
+
+    .feature-content h2{
+      margin-top: 66px;
+      margin-bottom: 8px;
+    }
 
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 6.3rem 10.313rem 5.375rem 10.313rem;
+    padding: 6.3rem 10.313rem 6.375rem 10.313rem;
   }
 
   .feature-inner--ui {
