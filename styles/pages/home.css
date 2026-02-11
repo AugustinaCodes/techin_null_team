@@ -240,7 +240,7 @@ header div.hero-visual img {
 
 .cards-inner {
   background-color: #EDF3F8;
-  padding: 60px 18px;
+  padding: 60px 23px 18px 24px;
   text-align: center;
 }
 
@@ -392,10 +392,13 @@ header div.hero-visual img {
   .cards-inner {
     display: flex;
     justify-content: center;
+    padding-left: 39px;
+    padding-right: 38px;
   }
 
   .card p {
-    padding: 0 10px;
+    padding: 0px;
+    margin: 0 4px;
   }
 }
 
@@ -568,6 +571,9 @@ header div.hero-visual img {
 
   .cards-inner {
     gap: 30px;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 105px;
   }
 
   .card p {
