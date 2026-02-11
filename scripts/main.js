@@ -39,28 +39,61 @@
 
 (() => {
   const form = document.querySelector(".contact-form");
-  const emailInput = document.querySelector("#email");
-  const emailError = document.querySelector(".email-error");
+  
+  if (!form) return;
 
-  if (!form || !emailInput || !emailError) return;
+  const fields = {
+    name: document.querySelector("#name"),
+    email: document.querySelector("#email"),
+    companyName: document.querySelector("#companyName"),
+    title: document.querySelector("#title"),
+    message: document.querySelector("#message")
+  };
+
+  const hasOnlyNumbers = (value) => /^\d+$/.test(value);
+  const hasOnlySymbols = (value) => /^[^a-zA-Z0-9]+$/.test(value);
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const validateField = (fieldKey) => {
+    const field = fields[fieldKey];
+    const errorContainer = document.querySelector(`#${fieldKey}-error`);
+    const value = field.value.trim();
+
+    if (!value || hasOnlyNumbers(value) || hasOnlySymbols(value)) {
+      field.classList.add("error");
+      errorContainer.textContent = "This field can't be empty";
+      errorContainer.classList.add("show");
+      return false;
+    } else if (fieldKey === "email" && !isValidEmail(value)) {
+      field.classList.add("error");
+      errorContainer.textContent = "Please enter a valid email address";
+      errorContainer.classList.add("show");
+      return false;
+    } else {
+      field.classList.remove("error");
+      errorContainer.textContent = "";
+      errorContainer.classList.remove("show");
+      return true;
+    }
+  };
 
   form.addEventListener("submit", (e) => {
-    const emailValue = emailInput.value.trim();
+    e.preventDefault();
+    const results = Object.keys(fields).map((fieldKey) => validateField(fieldKey));
+    const isValid = results.every((result) => result === true);
 
-    if (!emailValue) {
-      e.preventDefault();
-      emailInput.classList.add("error");
-      emailError.classList.add("show");
-    } else {
-      emailInput.classList.remove("error");
-      emailError.classList.remove("show");
+    if (isValid) {
+      form.reset();
     }
   });
 
-  emailInput.addEventListener("input", () => {
-    if (emailInput.value.trim()) {
-      emailInput.classList.remove("error");
-      emailError.classList.remove("show");
-    }
+  // Clear error on input
+  Object.values(fields).forEach((field) => {
+    field.addEventListener("input", () => {
+      if (field.classList.contains("error")) {
+        const fieldKey = field.id;
+        validateField(fieldKey);
+      }
+    });
   });
 })();

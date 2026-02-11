@@ -118,6 +118,34 @@ header {
   color: var(--color-secondary-warning);
 }
 
+.contact-form .field-error {
+  color: var(--color-secondary-warning);
+  font-family: var(--font-text);
+  font-size: 11px;
+  letter-spacing: 0.08px;
+  line-height: 15px;
+  margin-top: 8px;
+  margin-left: 20px;
+  opacity: 0.5;
+  display: none;
+  min-height: 15px;
+}
+
+.contact-form .field-error.show {
+  display: block;
+}
+
+.contact-form input.error,
+.contact-form textarea.error {
+  border-bottom-color: var(--color-secondary-warning);
+  opacity: 0.5;
+}
+
+.contact-form input.error::placeholder,
+.contact-form textarea.error::placeholder {
+  color: var(--color-secondary-warning);
+}
+
 .email-error {
   color: var(--color-secondary-warning);
   font-family: var(--font-text);
