@@ -113,3 +113,13 @@
 
   sidebar.setAttribute("inert", "");
 })();
+
+
+const form = document.querySelector(".hero-form");
+
+form.addEventListener("submit", (e) => {
+  if (!form.checkValidity()) {
+    e.preventDefault();
+    form.reportValidity();
+  }
+});
