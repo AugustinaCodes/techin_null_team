@@ -257,12 +257,12 @@ header {
 /* Desktop Design */
 
 @media (min-width: 1440px) {
+  header {
+    padding: 0px;
+  }
+
   .hidden-text {
     display: inline;
-  }
-  .contact-form {
-    display: flex;
-    flex-direction: column;
   }
 
   .logos-grid {
@@ -275,6 +275,7 @@ header {
     padding: 0 165px;
     justify-content: space-between;
   }
+
   .contact-logos {
     display: flex;
     flex-direction: column;
@@ -287,6 +288,17 @@ header {
   }
 
   /* Contact Form */
+
+  .contact {
+    padding: 0px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    margin: 0px;
+  }
 
   .contact h1 {
     font-size: 56px;
