@@ -8,6 +8,24 @@
 
 header {
   padding-inline: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pattern-circle {
+  position: absolute;
+  top: -760px;
+  left: 470px;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-bg {
+  position: relative;
+  z-index: 1;
 }
 
 .hidden-text {

@@ -241,9 +241,22 @@ footer {
   text-align: center;
   justify-content: center;
   max-height: 375px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pattern-circle-footer {
+  position: absolute;
+  bottom: -625px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  pointer-events: none;
 }
 
 .footer__nav {
+  position: relative;
   padding-top: 2.61rem;
   padding-bottom: 2.5rem;
 }
@@ -301,6 +314,10 @@ footer {
   /* Navigation Section */
 
   .hamburger-menu {
+    display: none;
+  }
+  
+  .bg-pattern-circle-footer {
     display: none;
   }
 

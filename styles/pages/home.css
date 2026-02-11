@@ -10,6 +10,19 @@ header {
   background-color: var(--color-primary-white);
   padding-inline: 24px;
   padding-bottom: 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pattern-circle {
+  position: absolute;
+  top: -535px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
 }
 
 header section div.container-hero-content {
@@ -265,6 +278,14 @@ header div.hero-visual img {
 /* Tablet Design */
 
 @media (min-width: 768px) {
+
+  .bg-pattern-circle {
+  top: -300px;
+  left: 50%;
+  width: auto;
+  height: auto;
+}
+
   /* Header Section */
 
   header section div.container-hero-content {

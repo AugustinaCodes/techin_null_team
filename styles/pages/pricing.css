@@ -14,6 +14,24 @@ main {
 
 header {
   padding-inline: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pattern-circle {
+  position: absolute;
+  top: -760px;
+  left: 470px;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pricing-bg {
+  position: relative;
+  z-index: 1;
 }
 
 .pricing h1 {
