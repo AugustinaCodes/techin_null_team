@@ -114,46 +114,47 @@
   sidebar.setAttribute("inert", "");
 })();
 
+// Schedule a Demo Button:
 
-// const form = document.querySelector(".hero-form");
-// const email = document.querySelector("#email");
+const form = document.querySelector(".hero-form");
+const email = document.querySelector("#email");
 
-// if (form && email) {
-//   const validateDash = () => {
-//     const value = email.value.trim();
+if (form && email) {
+  const validateDash = () => {
+    const value = email.value.trim();
 
-//     if (value.startsWith("-")) {
-//       email.setCustomValidity("Email cannot start with '-'");
-//     } else {
-//       email.setCustomValidity("");
-//     }
-//   };
+    if (value.startsWith("-")) {
+      email.setCustomValidity("Email cannot start with '-'");
+    } else {
+      email.setCustomValidity("");
+    }
+  };
 
-//   email.addEventListener("input", () => {
-//     validateDash();
+  email.addEventListener("input", () => {
+    validateDash();
 
-//     if (email.value.trim() !== "" && !email.checkValidity()) {
-//       email.reportValidity();
-//     }
-//   });
+    if (email.value.trim() !== "" && !email.checkValidity()) {
+      email.reportValidity();
+    }
+  });
 
-//   email.addEventListener("blur", () => {
-//     validateDash();
+  email.addEventListener("blur", () => {
+    validateDash();
 
-//     if (email.value.trim() !== "" && !email.checkValidity()) {
-//       email.reportValidity();
-//     }
-//   });
+    if (email.value.trim() !== "" && !email.checkValidity()) {
+      email.reportValidity();
+    }
+  });
 
-//   form.addEventListener("submit", (e) => {
-//     validateDash();
+  form.addEventListener("submit", (e) => {
+    validateDash();
 
-//     if (!form.checkValidity()) {
-//       e.preventDefault();
-//       form.reportValidity();
-//     }
-//   });
-// }
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      form.reportValidity();
+    }
+  });
+}
 
 // Contact form validation
 
