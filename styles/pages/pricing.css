@@ -18,7 +18,6 @@ header {
 
 .pricing h1 {
   width: 20.438rem;
-  height: 2.75rem;
   margin: auto;
   margin-bottom: 2.75rem;
   margin-top: 3.217rem;
@@ -69,7 +68,6 @@ p.price {
   text-align: center;
   letter-spacing: -0.027rem;
   margin: 0;
-  height: 4.813rem;
   line-height: normal;
   font-family: var(--font-title);
   opacity: 100%;
@@ -151,7 +149,6 @@ p.price {
 
   .pricing h1 {
     width: 21.188rem;
-    height: 4.125rem;
     margin-bottom: 3.563rem;
     margin-top: 5.404rem;
     font-size: 3rem;
@@ -208,7 +205,6 @@ p.price {
 
   .pricing h1 {
     width: 546px;
-    height: 4.813rem;
     margin-bottom: 3.75rem;
     margin-top: 5rem;
     margin-inline: 0;
@@ -249,7 +245,6 @@ p.price {
     text-align: left;
     letter-spacing: -0.027rem;
     margin: 0;
-    height: 4.813rem;
   }
 
   .price-card hr {
