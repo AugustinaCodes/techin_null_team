@@ -116,10 +116,41 @@
 
 
 const form = document.querySelector(".hero-form");
+const email = document.querySelector("#email");
 
-form.addEventListener("submit", (e) => {
-  if (!form.checkValidity()) {
-    e.preventDefault();
-    form.reportValidity();
-  }
-});
+if (form && email) {
+  const validateDash = () => {
+    const value = email.value.trim();
+
+    if (value.startsWith("-")) {
+      email.setCustomValidity("Email cannot start with '-'");
+    } else {
+      email.setCustomValidity("");
+    }
+  };
+
+  email.addEventListener("input", () => {
+    validateDash();
+
+    if (email.value.trim() !== "" && !email.checkValidity()) {
+      email.reportValidity();
+    }
+  });
+
+  email.addEventListener("blur", () => {
+    validateDash();
+
+    if (email.value.trim() !== "" && !email.checkValidity()) {
+      email.reportValidity();
+    }
+  });
+
+  form.addEventListener("submit", (e) => {
+    validateDash();
+
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      form.reportValidity();
+    }
+  });
+}
