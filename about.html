@@ -20,7 +20,7 @@
   <body>
     <!-- --------------------task VH4-29 ---------------------- -->
     <header>
-      <nav class="nav">
+      <nav class="nav"  aria-label="Main">
         <div class="nav__logo">
           <a href="/index.html">
             <img src="assets/shared/desktop/logo.svg" alt="logo" />
@@ -33,7 +33,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <img src="assets/shared/mobile/menu.svg" alt="" />
+          <img src="assets/shared/mobile/menu.svg" alt="hamburger icon" />
         </button>
         <div class="nav__menu">
           <a href="/pricing.html">Pricing</a>
@@ -52,7 +52,7 @@
             <a href="/pricing.html">Pricing</a>
             <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
-            <button class="hamburger__button" type="button">
+            <button class="hamburger__button" type="button" role="button" tabindex="0" aria-label="Schedule a demo button">
               Schedule a Demo
             </button>
           </nav>
@@ -93,7 +93,7 @@
       <!-- -----------------task VH4-41 end------------------------------------ -->
 
       <!-- -----------------task VH4-42--------------------------- -->
-      <section class="section-two">
+      <section class="section-two" aria-label="Section">
         <div class="team-members">
           <div>
             <p class="team-members__paragraph">Team members</p>
@@ -138,7 +138,7 @@
           <h3 class="demo_button-h3">Ready to start?</h3>
           <div class="demo_button_inside">
             <input
-              type="text"
+              id="email" type="email"
               placeholder="Enter email address"
               class="demo_button-input"
             />
@@ -154,7 +154,7 @@
     <!-- -----------------task VH4-33------------------------------------- -->
 
     <footer>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="footer__nav">
         <div class="footer__nav__pages">
           <a href="/index.html"
             ><svg
