@@ -345,7 +345,7 @@ footer {
     justify-content: center;
     font-family: var(--font-text);
     color: var(--color-primary-white);
-    font-size: 1.0625rem;
+    font-size: 0.938rem;
     letter-spacing: 0px;
     font-weight: 600;
     cursor: pointer;
@@ -520,7 +520,8 @@ footer {
     padding-top: 1rem;
     padding-bottom: 0.9375rem;
     letter-spacing: 0px;
-    width: 10.8125rem;
+    width: 10.875rem;
+    height: 3rem;
     white-space: nowrap;
     position: absolute;
     right: 10.3125rem;
