@@ -301,7 +301,7 @@ header div.hero-visual img {
   }
 
   header div.hero-content form button {
-    width: 173px;
+    width: 174px;
     position: absolute;
     left: 332px;
     font-family: var(--font-text);
@@ -451,7 +451,7 @@ header div.hero-visual img {
   }
 
   header div.hero-content form button {
-    width: 173px;
+    width: 174px;
     height: 48px;
     border-radius: 24px;
     border: 0;
@@ -477,7 +477,7 @@ header div.hero-visual img {
 
   header div.hero-visual img {
     width: 258px;
-    height: 499px;
+    height: 464px;
   }
 
   /* Who We Work With Section */
