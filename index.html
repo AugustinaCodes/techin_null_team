@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/pages/home.css" />
     <script src="/scripts/main.js" defer></script>
-    <title>Document</title>
+    <title>PayAPI</title>
   </head>
   <body>
     <!-- -----------------------VH4-39 task------------------------- -->
     <header>
       <!-- ---------------VH4-26 task one------------------ -->
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <div class="nav__logo">
           <a href="/index.html">
-            <img src="assets/shared/desktop/logo.svg" alt="logo" />
+            <img src="assets/shared/desktop/logo.svg" alt="PayAPI" />
           </a>
         </div>
         <button
@@ -36,15 +36,15 @@
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
         </div>
-        <div class="nav__button">Schedule a Demo</div>
+        <a class="nav__button" href="/contact.html">Schedule a Demo</a>
       </nav>
-      <div class="nav__overlay" hidden></div>
+      <div class="nav__overlay" id="nav-overlay" hidden></div>
       <aside class="sidebar" id="mobile-menu" aria-hidden="true">
         <div class="sidebar__inner">
           <button class="sidebar__close" type="button" aria-label="Close menu">
             <img src="assets/shared/mobile/close.svg" alt="" />
           </button>
-          <nav class="sidebar__link">
+          <nav class="sidebar__link" aria-label="Mobile">
             <a href="/pricing.html">Pricing</a>
             <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
@@ -56,17 +56,21 @@
       </aside>
       <!-- --------------------VH4-26 task one end---------------------------- -->
       <section class="hero">
-        <div class="hero-bg">
+        <!-- <div class="hero-bg">
           <img src="/assets/pic.png" alt="" class="bubble bubble--1" />
-        </div>
+        </div> -->
         <div class="container-hero-content">
           <div class="hero-content">
             <h1>Start building with our APIs for absolutely free.</h1>
             <form class="hero-form">
+              <label class="sr-only" for="email">Email address</label>
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="Enter email address"
+                autocomplete="email"
+                required
               />
               <button type="submit">Schedule a Demo</button>
             </form>
@@ -77,8 +81,8 @@
           </div>
           <div class="hero-visual">
             <img
-              src="assets\home\desktop\illustration-phone-mockup-cropped.svg"
-              alt="Phone mockup img"
+              src="assets/home/desktop/illustration-phone-mockup-cropped.svg"
+              alt="Phone mockup"
             />
           </div>
         </div>
@@ -126,8 +130,8 @@
         <div class="feature-inner">
           <div class="feature-visual">
             <img
-              src="/assets/home/desktop/illustration-easy-to-implement.svg"
-              alt="Easy to implement code table"
+              src="/assets/home/desktop/Vector_easy_to.svg"
+              alt="Code example"
             />
           </div>
           <div class="feature-content">
@@ -147,7 +151,7 @@
         <div class="feature-bg--ui">
           <img
             src="/assets/shared/desktop/bg-pattern-circle.svg"
-            alt=""
+            alt="Simple UI screens"
             class="bubble bubble--3"
           />
         </div>
@@ -219,26 +223,32 @@
       <!-- -----------------VH4-38 task end------------------- -->
 
       <!-- -----------------VH4-34 task------------------- -->
-      <section class="cta">
-        <div class="demo_button">
-          <h3 class="demo_button-h3">Ready to start?</h3>
-          <div class="demo_button_inside">
-            <input
-              type="text"
-              placeholder="Enter email address"
-              class="demo_button-input"
-            />
-            <button class="demo_button-button">Shedule a Demo</button>
-          </div>
-        </div>
-      </section>
+      <section class="cta" aria-labelledby="cta-title">
+  <div class="demo_button">
+    <h3 id="cta-title" class="demo_button-h3">Ready to start?</h3>
+
+    <form class="demo_button_inside">
+      <label class="sr-only" for="cta-email">Email address</label>
+      <input
+        type="email"
+        id="cta-email"
+        name="email"
+        placeholder="Enter email address"
+        class="demo_button-input"
+        autocomplete="email"
+        required
+      />
+      <button type="submit" class="demo_button-button">Schedule a Demo</button>
+    </form>
+  </div>
+</section>
       <!-- -----------------VH4-34 task end------------------- -->
     </main>
     <!-- -----------------VH4-33 task------------------- -->
     <footer>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="Footer">
         <div class="footer__nav__pages">
-          <a href="/index.html"
+          <a href="/index.html" aria-label="PayAPI home"
             ><svg
               width="135"
               height="38"
@@ -318,7 +328,13 @@
           <a href="/contact.html" class="footer__nav__pages-text">Contact</a>
         </div>
         <div class="footer__nav__social">
-          <a href="facebook.com" target="_blank" class="social-link">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="Facebook"
+          >
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
@@ -326,14 +342,26 @@
               />
             </svg>
           </a>
-          <a href="twitter.com" target="_blank" class="social-link">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="Twitter"
+          >
             <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
               />
             </svg>
           </a>
-          <a href="linkedin.com" target="_blank " class="social-link">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z"
