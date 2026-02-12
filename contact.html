@@ -14,32 +14,45 @@
   </head>
 
   <body>
-    <!-- paste/insert nav from 1 sprint -->
     <header>
       <nav class="nav">
         <div class="nav__logo">
           <a href="/index.html">
-            <img src="assets/shared/desktop/logo.svg" alt="logo" />
+            <img src="assets/shared/desktop/logo.svg" alt="PayAPI" />
           </a>
         </div>
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-        </label>
-        <aside class="sidebar">
-          <nav class="sidebar__link">
-            <a href="/pricing.html">Pricing</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <div class="hamburger__button">Shedule a Demo</div>
-          </nav>
-        </aside>
+        <button
+          class="hamburger-menu"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <img src="assets/shared/mobile/menu.svg" alt="Hamburger Menu" />
+        </button>
         <div class="nav__menu">
           <a href="/pricing.html">Pricing</a>
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
         </div>
-        <div class="nav__button">Shedule a Demo</div>
+        <button class="nav__button" type="button">Schedule a Demo</button>
       </nav>
+      <div class="nav__overlay" hidden></div>
+      <aside class="sidebar" id="mobile-menu" aria-hidden="true">
+        <div class="sidebar__inner">
+          <button class="sidebar__close" type="button" aria-label="Close menu">
+            <img src="assets/shared/mobile/close.svg" alt="" />
+          </button>
+          <nav class="sidebar__link">
+            <a href="/pricing.html">Pricing</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <button class="hamburger__button" type="button">
+              Schedule a Demo
+            </button>
+          </nav>
+        </div>
+      </aside>
     </header>
 
     <!-- --------------------task VH4-29 end---------------------- -->
@@ -47,37 +60,118 @@
     <main>
       <section class="contact">
         <div class="contact-bg">
+          <!-- Bubble section: to do after -->
           <img
             src="/assets/pic.png"
-            alt="Text"
+            alt=""
+            aria-hidden="true"
             class="bubble bubble--contact"
           />
+          <!-- Bubble section -->
         </div>
-        <h1>Text</h1>
+        <h1>Submit a help request and we'll get in touch shortly.</h1>
         <div class="contact-inner">
-          <form class="contact-form">
-            <input type="text" placeholder="Text" />
-            <input type="email" placeholder="Text" />
-            <input type="text" placeholder="Text" />
-            <input type="text" placeholder="Text" />
-            <textarea placeholder="Text"></textarea>
+          <form class="contact-form" novalidate>
+            <div
+              class="sr-only"
+              id="form-error-summary"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></div>
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+            />
+            <div class="field-error" id="name-error" role="alert" aria-live="polite"></div>
+            <label for="email" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              autocomplete="email"
+              aria-required="true"
+              required
+              aria-describedby="email-error"
+            />
+            <div class="field-error" id="email-error" role="alert" aria-live="polite"></div>
+            <label for="companyName" class="sr-only">Company Name</label>
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              placeholder="Company Name"
+              autocomplete="organization"
+              aria-describedby="companyName-error"
+            />
+            <div class="field-error" id="companyName-error" role="alert" aria-live="polite"></div>
+            <label for="title" class="sr-only">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+              autocomplete="organization-title"
+              required
+              aria-required="true"
+              aria-describedby="title-error"
+            />
+            <div class="field-error" id="title-error" role="alert" aria-live="polite"></div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              cols="30"
+              required
+              aria-required="true"
+              aria-describedby="message-error"
+            ></textarea>
+            <div class="field-error" id="message-error" role="alert" aria-live="polite"></div>
             <label class="contact-check">
               <input type="checkbox" />
-              <span>Text</span>
+              <span
+                >Stay up-to-date with company announcements and updates to our
+                API</span
+              >
             </label>
-            <button type="submit">Text</button>
+            <button type="submit">Submit</button>
           </form>
           <!-- --------------------task VH4-43 end---------------------- -->
           <!-- --------------------task VH4-44---------------------- -->
-          <div class="contact-logos">
-            <h2>Text</h2>
+           <div class="contact-logos">
+            <h2>
+              Join the thousands of innovators
+              <span class="hidden-text">that are</span> already building with us
+            </h2>
             <div class="logos-grid">
-              <img src="/assets/pic.png" alt="Text" />
-              <img src="/assets/pic.png" alt="Text" />
-              <img src="/assets/pic.png" alt="Text" />
-              <img src="/assets/pic.png" alt="Text" />
-              <img src="/assets/pic.png" alt="Text" />
-              <img src="/assets/pic.png" alt="Text" />
+              <div class="logo">
+                <img src="/assets/contact/tesla.svg" alt="Tesla" />
+              </div>
+              <div class="logo">
+                <img src="/assets/contact/microsoft.svg" alt="Microsoft" />
+              </div>
+              <div class="logo">
+                <img src="/assets/contact/hewlett-packard.svg" alt="Hewlett-packard" />
+              </div>
+              <div class="logo">
+                <img src="/assets/contact/Vector.svg" alt="Oracle" />
+              </div>
+              <div class="logo">
+                <img src="/assets/contact/google.svg" alt="Google" />
+              </div>
+              <div class="logo">
+                <img src="/assets/contact/nvidia.svg" alt="Nvidia" />
+              </div>
             </div>
           </div>
           <!-- --------------------task VH4-44 end---------------------- -->

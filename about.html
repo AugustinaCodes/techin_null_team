@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/pages/about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/pages/about.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -14,33 +18,46 @@
   </head>
 
   <body>
-    <!-- paste/insert nav from 1 sprint -->
     <!-- --------------------task VH4-29 ---------------------- -->
     <header>
-      <nav class="nav">
+      <nav class="nav"  aria-label="Main">
         <div class="nav__logo">
           <a href="/index.html">
             <img src="assets/shared/desktop/logo.svg" alt="logo" />
           </a>
         </div>
-        <label class="hamburger-menu">
-          <input type="checkbox" />
-        </label>
-        <aside class="sidebar">
-          <nav class="sidebar__link">
-            <a href="/pricing.html">Pricing</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <div class="hamburger__button">Shedule a Demo</div>
-          </nav>
-        </aside>
+        <button
+          class="hamburger-menu"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <img src="assets/shared/mobile/menu.svg" alt="hamburger icon" />
+        </button>
         <div class="nav__menu">
           <a href="/pricing.html">Pricing</a>
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
         </div>
-        <div class="nav__button">Shedule a Demo</div>
+        <div class="nav__button">Schedule a Demo</div>
       </nav>
+      <div class="nav__overlay" hidden></div>
+      <aside class="sidebar" id="mobile-menu" aria-hidden="true">
+        <div class="sidebar__inner">
+          <button class="sidebar__close" type="button" aria-label="Close menu">
+            <img src="assets/shared/mobile/close.svg" alt="" />
+          </button>
+          <nav class="sidebar__link">
+            <a href="/pricing.html">Pricing</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <button class="hamburger__button" type="button" role="button" tabindex="0" aria-label="Schedule a demo button">
+              Schedule a Demo
+            </button>
+          </nav>
+        </div>
+      </aside>
     </header>
 
     <!-- --------------------task VH4-29 end---------------------- -->
@@ -73,33 +90,40 @@
       <!-- -----------------task VH4-41 end------------------------------------ -->
 
       <!-- -----------------task VH4-42--------------------------- -->
-      <section class="about-details">
-        <div class="about-stats">
-          <div class="stat">
-            <p class="stat-label">Text</p>
-            <p class="stat-value">Text</p>
+      <section class="section-two" aria-label="Section">
+        <div class="team-members">
+          <div>
+            <p class="team-members__paragraph">Team members</p>
+            <h5 class="team-members__h5">300+</h5>
           </div>
-
-          <div class="stat">
-            <p class="stat-label">Text</p>
-            <p class="stat-value">Text</p>
+          <div>
+            <p class="team-members__paragraph">Ofices in the US</p>
+            <h5 class="team-members__h5">3</h5>
           </div>
-
-          <div class="stat">
-            <p class="stat-label">Text</p>
-            <p class="stat-value">Text</p>
+          <div>
+            <p class="team-members__paragraph">Transactions analyzed</p>
+            <h5 class="team-members__h5">10M+</h5>
           </div>
         </div>
 
-        <div class="about-sections">
-          <div class="about-row">
-            <h2>Text</h2>
-            <p>Text</p>
+        <div class="section-two__culture">
+          <div class="section-two__culture-one">
+            <h6 class="team-members__h6">The Culture</h6>
+            <p class="team-members__paragraph">
+              We strongly believe there's always an opportunity to learn from
+              each other outside of day-to-day work, whether it's company-wide
+              offsites, internal hackathons, or co-worker meetups. We always
+              value cross-team collaboration and diversity of thought, no matter
+              the job title.
+            </p>
           </div>
-
-          <div class="about-row">
-            <h2>Text</h2>
-            <p>Text</p>
+          <div class="section-two__culture-one">
+            <h6 class="team-members__h6">The People</h6>
+            <p class="team-members__paragraph">
+              We're all passionate about building a more efficient and inclusive
+              financial infrastructure together. At PayAPI, we have diverse
+              backgrounds and skills.
+            </p>
           </div>
         </div>
       </section>
@@ -111,7 +135,7 @@
           <h3 class="demo_button-h3">Ready to start?</h3>
           <div class="demo_button_inside">
             <input
-              type="text"
+              id="email" type="email"
               placeholder="Enter email address"
               class="demo_button-input"
             />
@@ -127,7 +151,7 @@
     <!-- -----------------task VH4-33------------------------------------- -->
 
     <footer>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="footer__nav">
         <div class="footer__nav__pages">
           <a href="/index.html"
             ><svg
