@@ -54,7 +54,7 @@ header div.hero-content form input {
   margin-top: 13px;
 }
 
-header div.hero-content form input::placeholder{
+header div.hero-content form input::placeholder {
   opacity: 50%;
 }
 
@@ -93,7 +93,7 @@ header p.hero-note {
 }
 
 header p.hero-note a {
-  color: #42525C;
+  color: #42525c;
   font-weight: bold;
 }
 
@@ -251,8 +251,8 @@ header div.hero-visual img {
 /* Cards Section */
 
 .cards-inner {
-  background-color: #EDF3F8;
-  padding: 44px 23px 35px 23px;
+  background-color: #edf3f8;
+  padding: 60px 23px 18px 24px;
   text-align: center;
 }
 
@@ -279,7 +279,7 @@ header div.hero-visual img {
 @media (min-width: 768px) {
   /* Header Section */
 
-  header{
+  header {
     padding: 40px;
     padding-bottom: 100px;
   }
@@ -319,7 +319,7 @@ header div.hero-visual img {
   }
 
   header div.hero-content form button {
-    width: 173px;
+    width: 174px;
     position: absolute;
     left: 332px;
     font-family: var(--font-text);
@@ -329,7 +329,7 @@ header div.hero-visual img {
     color: var(--color-primary-white);
   }
 
-  header p.hero-note{
+  header p.hero-note {
     margin-top: 16px;
   }
 
@@ -373,12 +373,12 @@ header div.hero-visual img {
     height: 50px;
   }
 
-  .feature-inner{
+  .feature-inner {
     padding: 100px 97px 40px 97px;
   }
 
   .feature-content p {
-   height: 48px;
+    height: 48px;
   }
 
   .feature-visual img {
@@ -388,7 +388,7 @@ header div.hero-visual img {
   /* Simple UI & UX Section */
 
   .feature--ui {
-    padding: 4.25rem 6.063rem 4rem  6.063rem;
+    padding: 4.25rem 6.063rem 4rem 6.063rem;
   }
 
   .feature-visual--phones {
@@ -420,27 +420,27 @@ header div.hero-visual img {
   .cards-inner {
     display: flex;
     justify-content: center;
-    padding-bottom: 58px;
-    padding-inline: 38px;
-
+    padding-left: 39px;
+    padding-right: 38px;
   }
 
   .cards-inner .card:nth-child(1) {
-  width: 223px;
-  margin-right: 9px;
-}
+    width: 223px;
+    margin-right: 9px;
+  }
 
-.cards-inner .card:nth-child(2) {
-  width: 225px;
-  margin-right: 7px;
-}
+  .cards-inner .card:nth-child(2) {
+    width: 225px;
+    margin-right: 7px;
+  }
 
-.cards-inner .card:nth-child(3) {
-  width: 227px;
-}
+  .cards-inner .card:nth-child(3) {
+    width: 227px;
+  }
 
   .card p {
-    letter-spacing: -0.14px;
+    padding: 0px;
+    margin: 0 4px;
   }
 }
 
@@ -449,7 +449,7 @@ header div.hero-visual img {
 @media (min-width: 1440px) {
   /* Header Section */
 
-  header{
+  header {
     padding-inline: 0;
     padding-bottom: 75px;
   }
@@ -494,7 +494,7 @@ header div.hero-visual img {
   }
 
   header div.hero-content form button {
-    width: 173px;
+    width: 174px;
     height: 48px;
     border-radius: 24px;
     border: 0;
@@ -520,7 +520,7 @@ header div.hero-visual img {
 
   header div.hero-visual img {
     width: 258px;
-    height: 499px;
+    height: 464px;
   }
 
   /* Who We Work With Section */
@@ -529,10 +529,10 @@ header div.hero-visual img {
     padding: 106px 163px 115px 165px;
   }
 
-      .partners-content h2{
-        margin-top: 0;
-        margin-bottom: 8px;
-      }
+  .partners-content h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
 
   .partners-inner {
     flex-direction: row-reverse;
@@ -584,12 +584,12 @@ header div.hero-visual img {
     margin-right: 125px;
   }
 
-    .feature-content h2{
-      margin-top: 66px;
-      margin-bottom: 8px;
-      line-height: 56px;
-      height: 66px;
-    }
+  .feature-content h2 {
+    margin-top: 66px;
+    margin-bottom: 8px;
+    line-height: 56px;
+    height: 66px;
+  }
 
   /* Simple UI & UX Section */
 
@@ -609,7 +609,7 @@ header div.hero-visual img {
   }
 
   .feature-content--ui p {
-     width: 445px;
+    width: 445px;
     text-align: left;
   }
 
@@ -623,31 +623,32 @@ header div.hero-visual img {
 
   /* Cards Section */
 
-  .card { 
+  .card {
     width: 350px;
   }
 
   .cards-inner {
     gap: 30px;
-    padding-bottom: 50px;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 105px;
   }
 
   .card p {
     padding: 0;
   }
 
-   .cards-inner .card:nth-child(1) {
-  width: 352px;
-  margin-right: 29px;
-}
+  .cards-inner .card:nth-child(1) {
+    width: 352px;
+    margin-right: 29px;
+  }
 
-.cards-inner .card:nth-child(2) {
-  width: 350px;
-  margin-right: 30px;
-}
+  .cards-inner .card:nth-child(2) {
+    width: 350px;
+    margin-right: 30px;
+  }
 
-.cards-inner .card:nth-child(3) {
-  width: 350px;
-}
-
+  .cards-inner .card:nth-child(3) {
+    width: 350px;
+  }
 }

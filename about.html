@@ -20,7 +20,7 @@
   <body>
     <!-- --------------------task VH4-29 ---------------------- -->
     <header>
-      <nav class="nav">
+      <nav class="nav"  aria-label="Main">
         <div class="nav__logo">
           <a href="/index.html">
             <img src="assets/shared/desktop/logo.svg" alt="logo" />
@@ -33,7 +33,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <img src="assets/shared/mobile/menu.svg" alt="" />
+          <img src="assets/shared/mobile/menu.svg" alt="hamburger icon" />
         </button>
         <div class="nav__menu">
           <a href="/pricing.html">Pricing</a>
@@ -52,7 +52,7 @@
             <a href="/pricing.html">Pricing</a>
             <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
-            <button class="hamburger__button" type="button">
+            <button class="hamburger__button" type="button" role="button" tabindex="0" aria-label="Schedule a demo button">
               Schedule a Demo
             </button>
           </nav>
@@ -64,36 +64,33 @@
 
     <main>
       <!-- -----------------task VH4-41 ------------------- -->
-      <section class="about-intro">
-        <div class="about-bg">
-          <img src="/assets/pic.png" alt="Text" class="bubble bubble--about1" />
-          <img src="/assets/pic.png" alt="Text" class="bubble bubble--about2" />
-        </div>
-
-        <div class="about-inner">
-          <h1>Text</h1>
-
-          <div class="about-highlights">
-            <div class="about-block">
-              <h2>Text</h2>
-              <p>Text</p>
+    <section class="section-one">
+        <h2 class="section-one_h2">We empower innovators by delivering access to the financial system </h2>
+        <div class="section-one_wrap">
+            <div class="section-one__vision">
+                <h6 class="section-one_h6">Our Vision</h6>
+                <p class="section-one_paragraph">Our main goal is to build beautiful consumer experiences along with
+                    developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability
+                    to create amazing products that solve big problems. We are deeply focused on democratizing financial
+                    services through technology.
+                </p>
             </div>
-
-            <div class="about-block">
-              <h2>Text</h2>
-              <p>Text</p>
+            <div class="section-one__vision">
+                <h6 class="section-one_h6">Our Business </h6>
+                <p class="section-one_paragraph">At the core of our platform is the technical infrastructure APIs that
+                    connect consumers. Our innovative product provides key insights for businesses and individuals, as
+                    well as robust reporting for traditional financial institutions and developers.
+                </p>
             </div>
-          </div>
+            <img src="\assets\about\mobile\image-team-members.jpg" alt="team-members" class="section-one_img_mobile">
+            <img src="\assets\about\tablet\image-team-members.jpg" alt="team-members" class="section-one_img_tablet">
+            <img src="\assets\about\desktop\image-team-members.jpg" alt="team-members" class="section-one_img_desktop">
         </div>
-
-        <div class="about-image">
-          <img src="/assets/pic.png" alt="Text" />
-        </div>
-      </section>
+    </section>
       <!-- -----------------task VH4-41 end------------------------------------ -->
 
       <!-- -----------------task VH4-42--------------------------- -->
-      <section class="section-two">
+      <section class="section-two" aria-label="Section">
         <div class="team-members">
           <div>
             <p class="team-members__paragraph">Team members</p>
@@ -138,7 +135,7 @@
           <h3 class="demo_button-h3">Ready to start?</h3>
           <div class="demo_button_inside">
             <input
-              type="text"
+              id="email" type="email"
               placeholder="Enter email address"
               class="demo_button-input"
             />
@@ -154,7 +151,7 @@
     <!-- -----------------task VH4-33------------------------------------- -->
 
     <footer>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="footer__nav">
         <div class="footer__nav__pages">
           <a href="/index.html"
             ><svg
