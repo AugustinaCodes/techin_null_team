@@ -59,6 +59,13 @@
     const errorContainer = document.querySelector(`#${fieldKey}-error`);
     const value = field.value.trim();
 
+    if (fieldKey === "companyName" && !value) {
+      field.classList.remove("error");
+      errorContainer.textContent = "";
+      errorContainer.classList.remove("show");
+      return true;
+    }
+
     if (!value || hasOnlyNumbers(value) || hasOnlySymbols(value)) {
       field.classList.add("error");
       errorContainer.textContent = "This field can't be empty";
