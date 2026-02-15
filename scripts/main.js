@@ -116,45 +116,62 @@
 
 // Schedule a Demo Button:
 
-const form = document.querySelector(".hero-form");
-const email = document.querySelector("#email");
+(() => {
+  const form = document.querySelector(".hero-form");
+  if (!form) return;
 
-if (form && email) {
-  const validateDash = () => {
+  // svarbu: imam email tik iš šitos formos, ne globaliai
+  const email = form.querySelector('input[type="email"]');
+  if (!email) return;
+
+  const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
+  const validateEmail = () => {
     const value = email.value.trim();
+
+    // jei tu nori, kad tuščias rodytų klaidą tik submit'e – paliekam customValidity tuščią kol tuščias
+    if (value === "") {
+      email.setCustomValidity("");
+      return true;
+    }
 
     if (value.startsWith("-")) {
       email.setCustomValidity("Email cannot start with '-'");
-    } else {
-      email.setCustomValidity("");
+      return false;
     }
+
+    if (!isValidEmail(value)) {
+      email.setCustomValidity("Please enter a valid email address");
+      return false;
+    }
+
+    email.setCustomValidity("");
+    return true;
   };
 
+  // nerodom klaidos kol vartotojas nieko neįrašė
   email.addEventListener("input", () => {
-    validateDash();
-
-    if (email.value.trim() !== "" && !email.checkValidity()) {
-      email.reportValidity();
-    }
+    validateEmail();
   });
 
   email.addEventListener("blur", () => {
-    validateDash();
-
-    if (email.value.trim() !== "" && !email.checkValidity()) {
+    if (email.value.trim() !== "") {
+      validateEmail();
       email.reportValidity();
     }
   });
 
   form.addEventListener("submit", (e) => {
-    validateDash();
+    // submit'e jau leidžiam rodyti ir tuščio / neteisingo atvejį per browser required
+    validateEmail();
 
     if (!form.checkValidity()) {
       e.preventDefault();
       form.reportValidity();
     }
   });
-}
+})();
+
 
 // Contact form validation
 

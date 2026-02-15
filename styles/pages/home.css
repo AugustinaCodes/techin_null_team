@@ -10,6 +10,53 @@ header {
   background-color: var(--color-primary-white);
   padding-inline: 24px;
   padding-bottom: 80px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: -550px;
+  left: 190px;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.bubble {
+  width: 780px;
+  max-width: none;
+}
+
+.partners {
+  position: relative;
+  overflow: hidden;
+}
+
+.partners-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.partners-bg .bubble--2 {
+  position: absolute;
+  top: -600px;
+  left: 200px;
+  transform: translateX(-50%);
+  width: 780px;
+  max-width: none;
+  opacity: 1;
+}
+
+.footer__nav {
+  position: relative;
+  z-index: 1;
 }
 
 header section div.container-hero-content {
@@ -120,6 +167,7 @@ header div.hero-visual img {
   gap: 2rem;
   align-items: center;
   justify-items: center;
+  z-index: 1;
 }
 
 .partners-content {
@@ -282,6 +330,22 @@ header div.hero-visual img {
   header {
     padding: 40px;
     padding-bottom: 100px;
+    padding-top: 0;
+  }
+
+  .hero-bg {
+    top: -660px;
+    left: 380px;
+  }
+
+  .bubble {
+    width: 949px;
+  }
+
+  .partners-bg .bubble--2 {
+    top: -590px;
+    left: 390px;
+    width: 810px;
   }
 
   header section div.container-hero-content {
@@ -452,6 +516,21 @@ header div.hero-visual img {
   header {
     padding-inline: 0;
     padding-bottom: 75px;
+  }
+
+  .hero-bg {
+    top: -240px;
+    left: 1150px;
+  }
+
+  .bubble {
+    width: 780px;
+  }
+
+  .partners-bg .bubble--2 {
+    top: -390px;
+    left: 150px;
+    width: 810px;
   }
 
   header section div.container-hero-content {

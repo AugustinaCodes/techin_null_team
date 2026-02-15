@@ -25,6 +25,30 @@ header {
   background-color: #edf3f8;
 }
 
+header {
+  padding-bottom: 51px;
+  position: relative;
+  overflow-y: visible;
+}
+
+.page-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.page-bubble {
+  position: absolute;
+  top: -640px;
+  right: -480px;
+  width: 780px;
+  max-width: none;
+  opacity: 1;
+}
+
 .contact h1 {
   text-align: center;
   font-family: var(--font-title);
@@ -36,6 +60,7 @@ header {
   margin: 0 auto;
   font-weight: 300;
   line-height: 36px;
+  margin-bottom: 13px;
 }
 
 .contact-form {
@@ -68,10 +93,11 @@ header {
 
 .contact-form textarea {
   resize: none;
+  padding-bottom: 14px;
 }
 
 .contact-check {
-  margin: 24px 0;
+  margin: 24px 0 29px 0;
   font-family: var(--font-text);
   font-size: 15px;
   line-height: 25px;
@@ -104,7 +130,7 @@ header {
   font-weight: bold;
   color: var(--color-secondary-title-text);
   width: 152px;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 /* Email validation error check */
@@ -227,6 +253,23 @@ header {
 /* Tablet Design */
 
 @media (min-width: 768px) {
+  header {
+    padding-inline: 40px;
+  }
+
+  .page-bubble {
+    top: -640px;
+    right: -670px;
+    width: 950px;
+  }
+
+  .page-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    height: 900px;
+  }
   .logos-grid {
     width: 541px;
     height: 104px;
@@ -246,7 +289,7 @@ header {
   }
 
   .contact-logos {
-    padding: 42px 0 106px 0;
+    padding: 26px 0 106px 0;
   }
 
   .contact-logos h2 {
@@ -275,6 +318,7 @@ header {
     line-height: 56px;
     letter-spacing: 0.37px;
     padding: 0 20px;
+    margin-bottom: 24px;
   }
 
   .contact-form {
@@ -291,6 +335,12 @@ header {
 @media (min-width: 1440px) {
   header {
     padding: 0px;
+  }
+
+  .page-bubble {
+    top: -550px;
+    right: -160px;
+    width: 780px;
   }
 
   .hidden-text {
@@ -364,6 +414,10 @@ header {
   .contact-form input,
   .contact-form textarea {
     cursor: pointer;
+  }
+
+  .contact button {
+    margin-bottom: 99px;
   }
 
   .contact button:hover {
