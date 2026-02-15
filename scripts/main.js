@@ -115,61 +115,61 @@
 })();
 
 // Schedule a Demo Button:
-
 (() => {
-  const form = document.querySelector(".hero-form");
-  if (!form) return;
-
-  // svarbu: imam email tik iš šitos formos, ne globaliai
-  const email = form.querySelector('input[type="email"]');
-  if (!email) return;
-
   const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
-  const validateEmail = () => {
-    const value = email.value.trim();
+  const attachEmailValidation = (formSelector) => {
+    const form = document.querySelector(formSelector);
+    if (!form) return;
 
-    // jei tu nori, kad tuščias rodytų klaidą tik submit'e – paliekam customValidity tuščią kol tuščias
-    if (value === "") {
+    const email = form.querySelector('input[type="email"]');
+    if (!email) return;
+
+    const validateEmail = () => {
+      const value = email.value.trim();
+
+      if (value === "") {
+        email.setCustomValidity("");
+        return true;
+      }
+
+      if (value.startsWith("-")) {
+        email.setCustomValidity("Email cannot start with '-'");
+        return false;
+      }
+
+      if (!isValidEmail(value)) {
+        email.setCustomValidity("Please enter a valid email address");
+        return false;
+      }
+
       email.setCustomValidity("");
       return true;
-    }
+    };
 
-    if (value.startsWith("-")) {
-      email.setCustomValidity("Email cannot start with '-'");
-      return false;
-    }
+    email.addEventListener("input", () => {
+      validateEmail();
+    });
 
-    if (!isValidEmail(value)) {
-      email.setCustomValidity("Please enter a valid email address");
-      return false;
-    }
+    email.addEventListener("blur", () => {
+      if (email.value.trim() !== "") {
+        validateEmail();
+        email.reportValidity();
+      }
+    });
 
-    email.setCustomValidity("");
-    return true;
+    form.addEventListener("submit", (e) => {
+      validateEmail();
+
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      }
+    });
   };
 
-  // nerodom klaidos kol vartotojas nieko neįrašė
-  email.addEventListener("input", () => {
-    validateEmail();
-  });
-
-  email.addEventListener("blur", () => {
-    if (email.value.trim() !== "") {
-      validateEmail();
-      email.reportValidity();
-    }
-  });
-
-  form.addEventListener("submit", (e) => {
-    // submit'e jau leidžiam rodyti ir tuščio / neteisingo atvejį per browser required
-    validateEmail();
-
-    if (!form.checkValidity()) {
-      e.preventDefault();
-      form.reportValidity();
-    }
-  });
+  attachEmailValidation(".hero-form");
+  attachEmailValidation(".demo_button_inside");
 })();
 
 
