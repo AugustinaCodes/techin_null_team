@@ -22,7 +22,6 @@
   margin: 0;
 }
 
-
 /* Navigation Section */
 /* NAV */
 .nav {
@@ -30,9 +29,11 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 2.5475rem;
+  z-index: 1;
+  position: relative;
 }
 
-.nav__logo{
+.nav__logo {
   width: 133.9px;
 }
 
@@ -233,6 +234,29 @@ body.nav-locked {
 }
 
 /* Footer */
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: #1b262f;
+}
+
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer-bubble {
+  position: absolute;
+  left: 50%;
+  bottom: -700px;
+  transform: translateX(-50%);
+  width: 900px;
+  max-width: none;
+  opacity: 1;
+  display: block;
+}
 
 footer {
   background-color: var(--color-secondary-bg);
@@ -242,7 +266,6 @@ footer {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  
 }
 
 .footer__nav {
@@ -250,7 +273,7 @@ footer {
   padding-bottom: 55px;
 }
 
-footer .nav__logo{
+footer .nav__logo {
   width: 135px;
 }
 
@@ -258,7 +281,6 @@ footer .nav__logo{
   text-decoration: none;
   color: var(--color-primary-white);
   padding-bottom: 40px;
-  
 }
 
 .footer__logo svg {
@@ -303,7 +325,7 @@ footer .nav__logo{
   opacity: 1;
 }
 
-.footer__nav__social a{
+.footer__nav__social a {
   padding-bottom: 0;
 }
 
@@ -317,7 +339,7 @@ footer .nav__logo{
   }
 
   .nav {
-    padding:  0rem 0rem 3rem 0rem;
+    padding: 2.5rem 0rem 3rem 0rem;
   }
 
   .nav__menu {
@@ -428,6 +450,9 @@ footer .nav__logo{
   }
 
   /* Footer Section */
+  .footer-bubble {
+    left: 100%;
+  }
 
   .footer__nav {
     display: flex;
@@ -438,7 +463,7 @@ footer .nav__logo{
     align-items: center;
   }
 
-  footer .nav__logo{
+  footer .nav__logo {
     margin-right: 10px;
   }
 
@@ -521,13 +546,13 @@ footer .nav__logo{
 
   .footer__nav__pages {
     align-items: center;
-     display: flex;
+    display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     gap: 2.5rem;
   }
- 
+
   .nav__button {
     padding-left: 1.65625rem;
     padding-right: 1.65625rem;
@@ -629,7 +654,6 @@ footer .nav__logo{
     color: var(--color-primary-white);
   }
 
-  
   .footer__nav__social {
     padding-bottom: 0rem;
   }

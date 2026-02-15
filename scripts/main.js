@@ -115,46 +115,63 @@
 })();
 
 // Schedule a Demo Button:
+(() => {
+  const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
-const form = document.querySelector(".hero-form");
-const email = document.querySelector("#email");
+  const attachEmailValidation = (formSelector) => {
+    const form = document.querySelector(formSelector);
+    if (!form) return;
 
-if (form && email) {
-  const validateDash = () => {
-    const value = email.value.trim();
+    const email = form.querySelector('input[type="email"]');
+    if (!email) return;
 
-    if (value.startsWith("-")) {
-      email.setCustomValidity("Email cannot start with '-'");
-    } else {
+    const validateEmail = () => {
+      const value = email.value.trim();
+
+      if (value === "") {
+        email.setCustomValidity("");
+        return true;
+      }
+
+      if (value.startsWith("-")) {
+        email.setCustomValidity("Email cannot start with '-'");
+        return false;
+      }
+
+      if (!isValidEmail(value)) {
+        email.setCustomValidity("Please enter a valid email address");
+        return false;
+      }
+
       email.setCustomValidity("");
-    }
+      return true;
+    };
+
+    email.addEventListener("input", () => {
+      validateEmail();
+    });
+
+    email.addEventListener("blur", () => {
+      if (email.value.trim() !== "") {
+        validateEmail();
+        email.reportValidity();
+      }
+    });
+
+    form.addEventListener("submit", (e) => {
+      validateEmail();
+
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      }
+    });
   };
 
-  email.addEventListener("input", () => {
-    validateDash();
+  attachEmailValidation(".hero-form");
+  attachEmailValidation(".demo_button_inside");
+})();
 
-    if (email.value.trim() !== "" && !email.checkValidity()) {
-      email.reportValidity();
-    }
-  });
-
-  email.addEventListener("blur", () => {
-    validateDash();
-
-    if (email.value.trim() !== "" && !email.checkValidity()) {
-      email.reportValidity();
-    }
-  });
-
-  form.addEventListener("submit", (e) => {
-    validateDash();
-
-    if (!form.checkValidity()) {
-      e.preventDefault();
-      form.reportValidity();
-    }
-  });
-}
 
 // Contact form validation
 

@@ -20,7 +20,7 @@
   <body>
     <!-- --------------------task VH4-29 ---------------------- -->
     <header>
-      <nav class="nav"  aria-label="Main">
+      <nav class="nav" aria-label="Main">
         <div class="nav__logo">
           <a href="/index.html">
             <img src="assets/shared/desktop/logo.svg" alt="logo" />
@@ -52,7 +52,13 @@
             <a href="/pricing.html">Pricing</a>
             <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
-            <button class="hamburger__button" type="button" role="button" tabindex="0" aria-label="Schedule a demo button">
+            <button
+              class="hamburger__button"
+              type="button"
+              role="button"
+              tabindex="0"
+              aria-label="Schedule a demo button"
+            >
               Schedule a Demo
             </button>
           </nav>
@@ -63,35 +69,68 @@
     <!-- --------------------task VH4-29 end---------------------- -->
 
     <main>
+      <div class="page-bg">
+        <img
+          src="/assets/shared/desktop/bg-pattern-circle.svg"
+          alt=""
+          class="page-bubble"
+          aria-hidden="true"
+        />
+      </div>
       <!-- -----------------task VH4-41 ------------------- -->
-    <section class="section-one">
-        <h2 class="section-one_h2">We empower innovators by delivering access to the financial system </h2>
+      <section class="section-one">
+        <h2 class="section-one_h2">
+          We empower innovators by delivering access to the financial system
+        </h2>
         <div class="section-one_wrap">
-            <div class="section-one__vision">
-                <h6 class="section-one_h6">Our Vision</h6>
-                <p class="section-one_paragraph">Our main goal is to build beautiful consumer experiences along with
-                    developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability
-                    to create amazing products that solve big problems. We are deeply focused on democratizing financial
-                    services through technology.
-                </p>
-            </div>
-            <div class="section-one__vision">
-                <h6 class="section-one_h6">Our Business </h6>
-                <p class="section-one_paragraph">At the core of our platform is the technical infrastructure APIs that
-                    connect consumers. Our innovative product provides key insights for businesses and individuals, as
-                    well as robust reporting for traditional financial institutions and developers.
-                </p>
-            </div>
-            <img src="\assets\about\mobile\image-team-members.jpg" alt="team-members" class="section-one_img_mobile">
-            <img src="\assets\about\tablet\image-team-members.jpg" alt="team-members" class="section-one_img_tablet">
-            <img src="\assets\about\desktop\image-team-members.jpg" alt="team-members" class="section-one_img_desktop">
+          <div class="section-one__vision">
+            <h6 class="section-one_h6">Our Vision</h6>
+            <p class="section-one_paragraph">
+              Our main goal is to build beautiful consumer experiences along
+              with developer-friendly infrastructure. The result is an
+              intelligent tool that gives everyone the ability to create amazing
+              products that solve big problems. We are deeply focused on
+              democratizing financial services through technology.
+            </p>
+          </div>
+          <div class="section-one__vision">
+            <h6 class="section-one_h6">Our Business</h6>
+            <p class="section-one_paragraph">
+              At the core of our platform is the technical infrastructure APIs
+              that connect consumers. Our innovative product provides key
+              insights for businesses and individuals, as well as robust
+              reporting for traditional financial institutions and developers.
+            </p>
+          </div>
+          <img
+            src="\assets\about\mobile\image-team-members.jpg"
+            alt="team-members"
+            class="section-one_img_mobile"
+          />
+          <img
+            src="\assets\about\tablet\image-team-members.jpg"
+            alt="team-members"
+            class="section-one_img_tablet"
+          />
         </div>
-    </section>
+      </section>
+      <img
+        src="\assets\about\desktop\image-team-members.jpg"
+        alt="team-members"
+        class="section-one_img_desktop"
+      />
       <!-- -----------------task VH4-41 end------------------------------------ -->
-
+      <div class="about-desktop-bg" aria-hidden="true">
+        <img
+          src="/assets/shared/desktop/bg-pattern-circle.svg"
+          alt=""
+          class="about-desktop-bubble"
+        />
+      </div>
       <!-- -----------------task VH4-42--------------------------- -->
       <section class="section-two" aria-label="Section">
         <div class="team-members">
+          <hr />
           <div>
             <p class="team-members__paragraph">Team members</p>
             <h5 class="team-members__h5">300+</h5>
@@ -104,11 +143,13 @@
             <p class="team-members__paragraph">Transactions analyzed</p>
             <h5 class="team-members__h5">10M+</h5>
           </div>
+          <hr />
         </div>
 
         <div class="section-two__culture">
           <div class="section-two__culture-one">
-            <h6 class="team-members__h6">The Culture</h6>
+            <h6 class="team-members__h6 other-h6">The Culture</h6>
+            <h6 class="team-members__h6 tablet-h6">Our Business</h6>
             <p class="team-members__paragraph">
               We strongly believe there's always an opportunity to learn from
               each other outside of day-to-day work, whether it's company-wide
@@ -135,7 +176,8 @@
           <h3 class="demo_button-h3">Ready to start?</h3>
           <div class="demo_button_inside">
             <input
-              id="email" type="email"
+              id="email"
+              type="email"
               placeholder="Enter email address"
               class="demo_button-input"
             />
@@ -144,13 +186,16 @@
         </div>
       </section>
       <!-- -----------------VH4-34 task end------------------- -->
-
-      <!-- paste/insert cta section from 1 sprint -->
     </main>
-
     <!-- -----------------task VH4-33------------------------------------- -->
-
-    <footer>
+    <footer class="footer">
+      <div class="footer-bg" aria-hidden="true">
+        <img
+          src="/assets/shared/desktop/bg-pattern-circle.svg"
+          alt=""
+          class="footer-bubble"
+        />
+      </div>
       <nav class="footer__nav" aria-label="footer__nav">
         <div class="footer__nav__pages">
           <a href="/index.html"
@@ -260,6 +305,5 @@
     </footer>
 
     <!-- -----------------task VH4-33 end------------------------------------- -->
-    <!-- paste/insert footer from 1 sprint -->
   </body>
 </html>
